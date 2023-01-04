@@ -1,0 +1,41 @@
+@import "./varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	transition: 0.5s;
+	font-family: $font_emoji;
+}
+a:hover {
+	color: $denger;
+}
+::-webkit-scrollbar {
+	color: $denger;
+	background-color: rgba(255, 255, 255, 0.147);
+	border: 1px solid rgb(255, 255, 255);
+	width: 6px;
+	height: 0px;
+}
+::-webkit-scrollbar-thumb {
+	color: $light;
+	background-color: $reddish;
+	border-radius: 15px;
+	// border: 1px solid #fff;
+}
+::-webkit-scrollbar-button {
+	background-color: $reddish;
+	color: $reddish;
+	border: 1px solid $light;
+}
+body {
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+.wrapper {
+	height: auto;
+	width: $w_90;
+	margin: 0 auto;
+}

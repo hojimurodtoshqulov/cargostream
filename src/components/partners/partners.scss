@@ -1,0 +1,31 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.wrapper {
+	padding: 5% 0;
+	h2 {
+		text-align: center;
+		font-size: 3em;
+		font-family: sans-serif;
+	}
+	.partners {
+		margin: 2% auto;
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		a {
+			img {
+				width: $w_90;
+				border-radius: $br_r_10;
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.526);
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}

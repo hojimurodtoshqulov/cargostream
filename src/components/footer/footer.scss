@@ -1,0 +1,186 @@
+@import "../../scss/varuables.scss";
+footer {
+	width: $w_100;
+	height: 150px;
+	padding: 0 10%;
+	background: #25292b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $light;
+	font-size: 1.3rem;
+	.footer__logo {
+		width: 16%;
+		object-fit: cover;
+		cursor: pointer;
+		
+	}
+	.nav__elements-callsDiv-calls {
+		width: auto;
+		
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&-numbers {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+	}
+	.nav__otherElements {
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.5em;
+		&-mail {
+		}
+		&__language {
+			align-self: flex-end;
+			display: flex;
+			gap: 0.3rem;
+			&-img {
+				width: 22px;
+				height: 20px;
+				border-radius: 50%;
+				object-fit: cover;
+				cursor: pointer;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+			}
+		}
+	}
+	.fa-solid {
+		margin-right: 0.5rem;
+	}
+}
+@media (min-width: $xxl) {
+	footer {
+		.footer__logo {
+			width: 16%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 1.8em;
+			}
+			&__language {
+				&-img {
+					width: 32px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $xxl) {
+	footer {
+		.footer__logo {
+			width: 16%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+				font-size: 1.2em;
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 1.2em;
+			}
+			&__language {
+				&-img {
+					width: 27px;
+					height: 25px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $xl) {
+	footer {
+		.footer__logo {
+			width: 17%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+				font-size: 1em;
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 1em;
+			}
+			&__language {
+				&-img {
+					width: 22px;
+					height: 20px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $lg) {
+	footer {
+		.footer__logo {
+			width: 18%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+				font-size: 1em;
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 0.8em;
+			}
+			&__language {
+				&-img {
+					width: 18px;
+					height: 17px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $sm) {
+	footer {
+		padding: 4% 10%;
+		height: auto;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.5em;
+		.footer__logo {
+			width: 30%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+				font-size: 0.9em;
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 0.7em;
+			}
+			&__language {
+				align-self: flex-start;
+				&-img {
+					width: 15px;
+					height: 14px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $sm) {
+	footer {
+		overflow: hidden;
+		.footer__logo {
+			width: 50%;
+
+		}
+	}
+}

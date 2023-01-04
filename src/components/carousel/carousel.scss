@@ -1,0 +1,135 @@
+@import "../../scss/varuables.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.carousel {
+	padding: 5% 0;
+	h2 {
+		margin: 2% auto;
+		text-align: center;
+		font-size: 3em;
+		font-family: $font_titles;
+	}
+	&__elements {
+		width: 100px;
+		color: #fff;
+		height: 170px;
+		margin: 0 2% 4% 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a {
+			display: block;
+			background: #ddd;
+			width: 90%;
+			height: 90%;
+			margin: 3.5% 5%;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.526);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			img {
+				width: 100%;
+				height: auto;
+				object-fit: cover;
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}
+@media (min-width: $xxl) {
+	.carousel {
+		padding: 5% 0;
+		&__elements {
+			height: 260px;
+			a {
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $xxl) {
+	.carousel {
+		h2 {
+			font-size: 2.5em;
+		}
+		&__elements {
+			height: 180px;
+			a {
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $xl) {
+	.carousel {
+		h2 {
+			font-size: 2.5em;
+		}
+		&__elements {
+			height: 140px;
+			a {
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $lg) {
+	.carousel {
+		h2 {
+			font-size: 2.4em;
+		}
+		&__elements {
+			height: 120px;
+			a {
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $md) {
+	.carousel {
+		h2 {
+			font-size: 2.2em;
+		}
+		&__elements {
+			height: 120px;
+			a {
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $sm) {
+	.carousel {
+		h2 {
+			font-size: 1.8em;
+		}
+		&__elements {
+			height: 100px;
+			a {
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}
+@media (max-width: $xs) {
+	.carousel {
+		h2 {
+			font-size: 1.5em;
+		}
+		&__elements {
+			height: 80px;
+			a {
+				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
+			}
+		}
+	}
+}

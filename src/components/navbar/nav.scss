@@ -1,0 +1,302 @@
+@import "../../scss/varuables.scss";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 123;
+	width: $w_100;
+	padding: 0 5%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	background: #181a1be5;
+
+	&__logo {
+		width: 15%;
+		object-fit: cover;
+		cursor: pointer;
+	}
+	&__elements {
+	
+		width: 82%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&-title {
+			font-size: 1.8em;
+			text-transform: uppercase;
+			font-family: $font_titles;
+			text-align: center;
+		}
+		&-callsDiv {
+			width: 18.4%;
+			&-calls {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				&-numbers {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+				}
+			}
+		}
+		&-linksDiv {
+		
+			width: 75%;
+			&-ul {
+				width: 70%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				font-size: 1.4em;
+				margin: 0 auto;
+				li {
+					cursor: pointer;
+					border-bottom: 2px solid rgba(0, 0, 0, 0);
+				}
+				li:hover {
+					color: $denger;
+					border-bottom: $denger;
+				}
+			}
+		}
+		&-others {
+			width: 26%;
+		
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			justify-content: center;
+			gap: 0.5em;
+			&-mail {
+			}
+			&-language {
+				align-self: flex-end;
+				display: flex;
+				gap: 0.3rem;
+				&-img {
+					width: 22px;
+					height: 20px;
+					border-radius: 50%;
+					object-fit: cover;
+					cursor: pointer;
+					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+				}
+			}
+		}
+	}
+	&__mobile {
+		display: none;
+		&-elements {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 3%;
+			p {
+				font-size: 1.3em;
+				transform: rotateY(180deg);
+				justify-self: flex-end;
+			}
+		}
+	}
+	.fa-solid {
+		margin-right: 0.3rem;
+	}
+}
+@media (min-width: $xxl) {
+	.nav {
+		&__elements {
+			&-title {
+				font-size: 2.5em;
+			}
+			&-callsDiv {
+				width: 18.4%;
+				&-calls {
+					a {
+						font-size: 1.5em;
+					}
+				}
+			}
+			&-linksDiv {
+				width: 75%;
+				&-ul {
+					width: 70%;
+					font-size: 2em;
+				}
+			}
+			&-others {
+				width: 26%;
+				gap: 0.5em;
+				a {
+					font-size: 1.5em;
+				}
+				&-language {
+					gap: 0.3rem;
+					&-img {
+						width: 40px;
+						height: 40px;
+					}
+				}
+			}
+		}
+		.fa-solid {
+			margin-right: 0.3rem;
+		}
+	}
+}
+@media (max-width: $xl) {
+	.nav {
+		&__elements {
+			&-title {
+				font-size: 1.5em;
+			}
+			&-callsDiv {
+				width: 22%;
+				&-calls {
+					a {
+						font-size: 0.9em;
+					}
+				}
+			}
+			&-linksDiv {
+				width: 85%;
+				&-ul {
+					width: 80%;
+					font-size: 1.3em;
+				}
+			}
+			&-others {
+				width: 30.5%;
+				gap: 0.5em;
+				a {
+					font-size: 0.9em;
+				}
+				&-language {
+					gap: 0.3rem;
+					&-img {
+						width: 18px;
+						height: 17px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: $lg) {
+	.nav {
+		&__elements {
+			&-title {
+				font-size: 1.1em;
+			}
+			&-callsDiv {
+				width: 23.5%;
+				&-calls {
+					a {
+						font-size: 0.7em;
+					}
+				}
+			}
+			&-linksDiv {
+				width: 85%;
+				&-ul {
+					width: 90%;
+					font-size: 1.2em;
+				}
+			}
+			&-others {
+				width: 32.8%;
+				gap: 0.5em;
+				a {
+					font-size: 0.7em;
+				}
+				&-language {
+					gap: 0.3rem;
+					&-img {
+						width: 14px;
+						height: 13px;
+					}
+				}
+			}
+		}
+		.fa-solid {
+			margin-right: 0.3rem;
+		}
+	}
+}
+@media (max-width: $md) {
+	.nav {
+		&__logo {
+			width: 30%;
+		}
+		&__elements {
+			display: none;
+		}
+		&__mobile {
+			width: 70%;
+			display: block;
+			&-elements {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 10%;
+				p {
+					font-size: 1.3em;
+					transform: rotateY(180deg);
+					justify-self: flex-end;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $sm) {
+	.nav {
+		&__logo {
+			width: 35%;
+		}
+		&__mobile {
+			display: block;
+			&-elements {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 8%;
+				p {
+					font-size: 1.1em;
+					transform: rotateY(180deg);
+					justify-self: flex-end;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $xs) {
+	.nav {
+		&__logo {
+			width: 45%;
+		}
+		&__mobile {
+			display: block;
+			&-elements {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 5%;
+				p {
+					font-size: 0.9em;
+					transform: rotateY(180deg);
+					justify-self: flex-end;
+				}
+			}
+		}
+	}
+}
