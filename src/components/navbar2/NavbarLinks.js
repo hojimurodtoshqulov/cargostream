@@ -12,24 +12,24 @@ export default function navbarLinks(params) {
 			<ul>
 				<li>
 					<i class="fa-solid fa-house"></i>
-					<a href="">Home</a>
+					Home
 				</li>
 				<li>
 					<i class="fa-solid fa-building"></i>
-					<a href="">О компани</a>
+					О компани
 				</li>
 				<li>
 					{/* <i class="fa-brands fa-servicestack"></i> */}
 					<i class="fa-solid fa-dragon"></i>
-					<a href="">Услуги</a>
+					Услуги
 				</li>
 				<li>
 					<i class="fa-solid fa-newspaper"></i>
-					<a href="">Новости </a>
+					Новости 
 				</li>
 				<li>
 					<i class="fa-solid fa-address-book"></i>
-					<a href="">Контакт</a>
+					Контакт
 				</li>
 			</ul>
 			<div className="nav__links-mobileElements">

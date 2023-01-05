@@ -2,10 +2,7 @@ import React from "react";
 import "../info.scss";
 import Button from "../../button/button";
 import { OurServicesData } from "./ourServicesData/ourServicesData";
-import { useState } from "react";
-// import { Button, Modal } from "antd";
 const OurServices = ({ infoData }) => {
-	const [modal2Open, setModal2Open] = useState(false);
 	return (
 		<div className="info" data-aos="zoom-in-up" data-aos-duration="2000">
 			<div className="wrapper">
@@ -15,29 +12,12 @@ const OurServices = ({ infoData }) => {
 							<div className="info-elements" key={index}>
 								<h2 className="info-elements-mb-title">{item.title}</h2>
 								<div className="info-img-div">
-									<img src={item.image} alt="image" />
+									<img src={item.image} alt="services" />
 								</div>
 								<div className="info-titles-div">
 									<h2>{item.title}</h2>
 									<p>{item.description}</p>
-									{/* <button>{item.buttonTitle}</button> */}
 									<Button buttonTitle={item.buttonTitle} />
-									{/* <Button
-										className="button"
-										onClick={() => (setModal2Open(true))}
-									>
-										{item.buttonTitle}
-									</Button>
-									<Modal
-										className="modal"
-										title="Vertically centered modal dialog"
-										centered
-										open={modal2Open}
-										onOk={() => setModal2Open(false)}
-										onCancel={() => setModal2Open(false)}
-									>
-										{"asfadvdeamvoa vao"}
-									</Modal> */}
 								</div>
 							</div>
 						</div>

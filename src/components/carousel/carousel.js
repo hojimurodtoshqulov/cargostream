@@ -51,32 +51,32 @@ export default function Rtl() {
 			<h2>Partners</h2>
 			<Slider {...settings}>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner1} alt="partner1 img" />
 					</a>
 				</div>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner2} alt="parner2 img" />
 					</a>
 				</div>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner3} alt="partner3 img" />
 					</a>
 				</div>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner4} alt="partner4 img" />
 					</a>
 				</div>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner5} alt="partner5 img" />
 					</a>
 				</div>
 				<div className="carousel__elements">
-					<a href="">
+					<a href="https://www.ark-logistics.uz/home">
 						<img src={partner6} alt="partner6 img" />
 					</a>
 				</div>

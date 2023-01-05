@@ -15,13 +15,13 @@ const ImageSlider = ({ slides }) => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
 	};
 	// ----------------------setinterval------------------------------ //
-	const Time1 = useEffect(() => {
+	useEffect(() => {
 		const interval = setInterval(() => {
 			setNum((num = -1));
 		}, 20000);
 		return () => clearInterval(interval);
 	}, []);
-	const Time2 = useEffect(() => {
+	useEffect(() => {
 		const interval = setInterval(() => {
 			setNum((num = num + 1));
 			setCurrent(current === length - 1 ? 0 : current + num);
@@ -45,7 +45,7 @@ const ImageSlider = ({ slides }) => {
 					>
 						{index === current && (
 							<>
-								<img src={slide.image} alt="travel image" className="image" />
+								<img src={slide.image} alt="slider" className="image" />
 								<div className="slide-elements">
 									<p className="description">{slide.description}</p>
 									<h1 className="title">{slide.title}</h1>

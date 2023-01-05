@@ -38,19 +38,15 @@
 			color: $light;
 			border-bottom: 2px solid rgba(255, 0, 0, 0);
 			transition: 1s;
+			font-size: 1.2em;
+			color: $light;
+			transition: 1s;
 			.fa-solid {
 				display: none;
 			}
 			&:hover {
 				border-bottom: 2px solid $denger;
-			}
-			&:hover a {
 				color: $denger;
-			}
-			a {
-				font-size: 1.2em;
-				color: $light;
-				transition: 1s;
 			}
 		}
 	}
@@ -64,9 +60,7 @@
 		ul {
 			width: 70%;
 			li {
-				a {
-					font-size: 1.8em;
-				}
+				font-size: 1.8em;
 			}
 		}
 	}
@@ -80,9 +74,7 @@
 		ul {
 			width: 75%;
 			li {
-				a {
-					font-size: 1.2em;
-				}
+				font-size: 1.2em;
 			}
 		}
 	}
@@ -96,9 +88,7 @@
 		ul {
 			width: 85%;
 			li {
-				a {
-					font-size: 1.1em;
-				}
+				font-size: 1.1em;
 			}
 		}
 	}
@@ -149,19 +139,15 @@
 				color: $light;
 				border-bottom: 1px solid #ff0000;
 				transition: 1s;
+				color: $light;
+				font-size: 1.2em;
 				.fa-solid {
 					display: inline-block;
 					margin-right: 0.5rem;
 				}
 				&:hover {
 					border-bottom: 2px solid $light;
-				}
-				&:hover a {
-					color: $light;
-				}
-				a {
-					color: $light;
-					font-size: 1.2em;
+					color: $denger;
 				}
 			}
 		}
@@ -223,15 +209,9 @@
 				width: $w_100;
 				border-bottom: 1px solid $denger;
 				transition: 1s;
+					font-size: 1.1em;
 				&:hover {
 					border-bottom: 1px solid $light;
-				}
-				&:hover a {
-					color: $light;
-				}
-				a {
-					color: $light;
-					font-size: 1.1em;
 				}
 			}
 		}
