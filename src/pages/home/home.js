@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "../../components/navbar/nav";
-import Nav2 from "../../components/navbar2/NavbarLinks";
+import {Nav} from "../../components/navbar/nav";
+import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import "../../scss/main.scss";
 import "./home.scss";
 import ImageSlider from "../../components/imageSlider/imageSlider";
@@ -17,7 +17,7 @@ import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Rtl from "../../components/carousel/carousel";
 import { useEffect } from "react";
-export default function App() {
+const Home = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
 	}, []);
@@ -25,7 +25,7 @@ export default function App() {
 		<div className="main">
 			<Nav />
 			<input type="checkbox" id="navLinks__menu" />
-			<Nav2 />
+			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu">
 				asfwrhewhgrw
 			</label>
@@ -61,7 +61,7 @@ export default function App() {
 		</div>
 	);
 }
-
+ export {Home}
 // export default function App() {
 
 //   return (
