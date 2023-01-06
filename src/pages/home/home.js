@@ -12,7 +12,7 @@ import { OurServicesData } from "../../components/info/ourServices/ourServicesDa
 import Stages from "../../components/stages/stages";
 import Submit from "../../components/submitApp/submit";
 import Aos from "aos";
-import "aos/dist/aos.css";
+import "aos/dist/aos.css"; 
 import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Rtl from "../../components/carousel/carousel";
