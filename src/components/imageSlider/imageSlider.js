@@ -4,6 +4,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./imageSlider.scss";
 import Button from "../button/button";
 import { useEffect } from "react";
+
 const ImageSlider = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
 	let [num, setNum] = useState(0);

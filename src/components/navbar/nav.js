@@ -4,8 +4,9 @@ import CallLink from "./callLinks/callLinks";
 import engLogo from "../../media/UK-Union-Flag.png";
 import ruLogo from "../../media/russianFlag.png";
 import "./nav.scss";
+import { Link } from "react-router-dom";
 
-export default function Nav() {
+const Nav = () => {
 	const [navSize, setnavSize] = useState("100px");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#000");
@@ -64,11 +65,21 @@ export default function Nav() {
 					}}
 				>
 					<ul className="nav__elements-linksDiv-ul">
-						<li>Главная</li>
-						<li>О компани</li>
-						<li>Услуги</li>
-						<li>Новости</li>
-						<li>Контакт</li>
+						<li>
+							<Link to="/">Главная</Link>
+						</li>
+						<li>
+							<Link to="/company">О компани</Link>
+						</li>
+						<li>
+							<Link to="/services">Услуги</Link>
+						</li>
+						<li>
+							<Link to="/news">Новости</Link>
+						</li>
+						<li>
+							<Link to="/contact">Контакт</Link>
+						</li>
 					</ul>
 				</div>
 				<div className="nav__elements-others">
@@ -130,4 +141,5 @@ export default function Nav() {
 			</div>
 		</nav>
 	);
-}
+};
+export { Nav };

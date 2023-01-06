@@ -2,7 +2,7 @@ import "./button.scss";
 export default function Button({ buttonTitle }) {
 	return (
 		<>
-			<button className="button" onClick={console.log("on click")}>
+			<button className="button">
 				{buttonTitle}
 			</button>
 		</>
