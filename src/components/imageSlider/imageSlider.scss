@@ -501,7 +501,8 @@
 				font-size: 4rem;
 			}
 			a {
-				width: 50%;
+				width: auto;
+				min-width: 33%;
 				button {
 					width: 100%;
 				}

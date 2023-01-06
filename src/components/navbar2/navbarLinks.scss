@@ -34,6 +34,9 @@
 		justify-content: space-between;
 		align-items: center;
 		overflow: hidden;
+		Link {
+			width: 100%;
+		}
 		li {
 			color: $light;
 			border-bottom: 2px solid rgba(255, 0, 0, 0);
@@ -146,7 +149,7 @@
 					margin-right: 0.5rem;
 				}
 				&:hover {
-					border-bottom: 2px solid $light;
+					border-bottom: 1px solid $light;
 					color: $denger;
 				}
 			}
@@ -156,7 +159,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			justify-content: space-between;
+			justify-content: space-bj etween;
 			gap: 1rem;
 			.nav__elements-callsDiv-calls {
 				width: 100%;
@@ -209,7 +212,7 @@
 				width: $w_100;
 				border-bottom: 1px solid $denger;
 				transition: 1s;
-					font-size: 1.1em;
+				font-size: 1.1em;
 				&:hover {
 					border-bottom: 1px solid $light;
 				}
