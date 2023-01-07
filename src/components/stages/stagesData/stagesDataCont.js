@@ -11,14 +11,14 @@ export const StagesDataCont = [
 		aos: "fade-right",
 		icon: <i className="fa-solid fa-phone"></i>,
 		titleCont: "Phone",
-		descriptionCont: "+998 93 543 38 11 <br> +998 97 758 25 00",
+		descriptionCont: <a href="tel:+998 93 543 38 11">+998 93 543 38 11</a>,
 		key: 1,
 	},
 	{
 		aos: "fade-left",
 		icon: <i className="fa-solid fa-envelope"></i>,
 		titleCont: "Email",
-		descriptionCont: "cargostreamuz@gmail.com",
+		descriptionCont: <a href="cargostreamuz@gmail.com">cargostreamuz@gmail.com</a>,
 		key: 2,
 	},
 ];

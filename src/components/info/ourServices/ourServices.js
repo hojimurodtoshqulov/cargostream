@@ -2,6 +2,7 @@ import React from "react";
 import "../info.scss";
 import Button from "../../button/button";
 import { OurServicesData } from "./ourServicesData/ourServicesData";
+import { Link } from "react-router-dom";
 const OurServices = ({ infoData }) => {
 	return (
 		<div className="info" data-aos="zoom-in-up" data-aos-duration="2000">
@@ -17,7 +18,9 @@ const OurServices = ({ infoData }) => {
 								<div className="info-titles-div">
 									<h2>{item.title}</h2>
 									<p>{item.description}</p>
-									<Button buttonTitle={item.buttonTitle} />
+									<Link to="/services">
+										<Button buttonTitle={item.buttonTitle} />
+									</Link>
 								</div>
 							</div>
 						</div>

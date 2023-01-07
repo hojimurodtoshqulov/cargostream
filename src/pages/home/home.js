@@ -18,6 +18,7 @@ import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Rtl from "../../components/carousel/carousel";
 import { useEffect } from "react";
+
 const Home = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
