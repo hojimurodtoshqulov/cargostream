@@ -8,6 +8,23 @@ const Footer = () => {
 		<footer>
 			<img className="footer__logo" src={footerLogo} alt="logo img" />
 			<CallLink />
+			<ul>
+				<li>
+					<a href="">
+						<i class="fa-brands fa-telegram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+				</li>
+			</ul>
 			<MailLang />
 		</footer>
 	);

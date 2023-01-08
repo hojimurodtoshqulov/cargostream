@@ -12,30 +12,30 @@ export default function NavbarLinks(params) {
 			<ul>
 				<li>
 					<Link to="/">
-						<i class="fa-solid fa-house"></i>
+						<i className="fa-solid fa-house"></i>
 						Home
 					</Link>
 				</li>
 				<li>
 					<Link to="/company">
-						<i class="fa-solid fa-building"></i>О компани
+						<i className="fa-solid fa-building"></i>О компани
 					</Link>
 				</li>
 				<li>
 					<Link to="/services">
-						<i class="fa-solid fa-dragon"></i>
+						<i className="fa-solid fa-dragon"></i>
 						Услуги
 					</Link>
 				</li>
 				<li>
 					<Link to="/news">
-						<i class="fa-solid fa-newspaper"></i>
+						<i className="fa-solid fa-newspaper"></i>
 						Новости
 					</Link>
 				</li>
 				<li>
 					<Link to="/contact">
-						<i class="fa-solid fa-address-book"></i>
+						<i className="fa-solid fa-address-book"></i>
 						Контакт
 					</Link>
 				</li>

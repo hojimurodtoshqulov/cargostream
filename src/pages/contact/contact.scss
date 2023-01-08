@@ -12,11 +12,33 @@
 	display: none;
 }
 .contact {
+	margin-top: 50vh;
+	background: #fff;
 	width: $w_100;
 	overflow: hidden;
+	.page__title {
+		position: absolute;
+		left: 30%;
+		top: 44vh;
+		overflow: hidden;
+		padding: 1% 0 2% 0;
+		font-family: $font_titles;
+		font-size: 2em;
+		width: 40%;
+		text-align: center;
+		color: $dark;
+		background: $light;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.698);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.647);
+		z-index: 12;
+		border-radius: $br_r_5;
+		text-transform: capitalize;
+	}
 	.stages-elements {
 		width: $w_100;
 		padding: 6% 0;
+		border-top: 1px solid rgba(255, 0, 0, 0);
+		border-bottom: 1px solid rgba(255, 0, 0, 0);
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
@@ -26,8 +48,10 @@
 				.stages {
 					color: $dark;
 					display: flex;
-
 					align-items: flex-start;
+					h2 {
+						display: none;
+					}
 					.stages-items {
 						display: flex;
 						justify-content: flex-start;
@@ -45,6 +69,8 @@
 							}
 						}
 						.texts {
+							width: 50%;
+							text-align: start;
 							.description {
 								color: #666;
 							}

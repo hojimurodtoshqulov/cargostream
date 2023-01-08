@@ -12,19 +12,20 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "./contact.scss";
+import Location from "../../components/location/location";
 
 const Contact = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
 	}, []);
 	return (
-		<div className="contact">
+		<div className="contact main">
 			<Nav />
 			<input type="checkbox" id="navLinks__menu" />
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<ShowBg bgImage={bgImg} title={"contact"} />
-<h2>contact</h2>
+			<h2 className="page__title">contact</h2>
 			<div
 				id="submitDesctop"
 				className="stages-elements"
@@ -33,15 +34,16 @@ const Contact = () => {
 			>
 				<div className="wrapper">
 					<div className="stages-elements-col1">
-						<Stages stagesData = {StagesDataCont} />
+						<Stages stagesData={StagesDataCont} />
 					</div>
 					<div className="stages-elements-col2">
 						<Submit />
 					</div>
 				</div>
 			</div>
+			<Location />
 			<Footer />
 		</div>
 	);
 };
-export {Contact};
+export { Contact };

@@ -12,30 +12,23 @@ import { OurServicesData } from "../../components/info/ourServices/ourServicesDa
 import Stages from "../../components/stages/stages";
 import { StagesData } from "../../components/stages/stagesData/stagesData";
 import Submit from "../../components/submitApp/submit";
-import Aos from "aos";
 import "aos/dist/aos.css"; 
 import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Rtl from "../../components/carousel/carousel";
-import { useEffect } from "react";
 
 const Home = () => {
-	useEffect(() => {
-		Aos.init({ duration: 2000 });
-	}, []);
 	return (
 		<div className="main">
 			<Nav />
 			<input type="checkbox" id="navLinks__menu" />
 			<NavbarLinks />
-			<label htmlFor="navLinks__menu" className="navLinks__menu">
-				asfwrhewhgrw
-			</label>
+			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<div className="slider_div">
 				<ImageSlider slides={SliderData} />
 			</div>
 			<div className="infoDiv">
-				{/* <button onClick={handleClick}>Scroll to element</button> */}
+				
 				<OurCompany OurCompanyData={OurCompanyData} />
 				<OurServices OurServicesData={OurServicesData} />
 			</div>

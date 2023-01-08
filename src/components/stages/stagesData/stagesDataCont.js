@@ -19,7 +19,16 @@ export const StagesDataCont = [
 		aos: "fade-left",
 		icon: <i className="fa-solid fa-envelope"></i>,
 		titleCont: "Email",
-		descriptionCont: <a href="cargostreamuz@gmail.com">cargostreamuz@gmail.com</a>,
+		descriptionCont: (
+			<a href="cargostreamuz@gmail.com">cargostreamuz@gmail.com</a>
+		),
 		key: 2,
+	},
+	{
+		aos: "fade-right",
+		tg: <a href=""><i class="fa-brands fa-telegram"></i></a>,
+		ins: <a href=""><i class="fa-brands fa-instagram"></i></a>,
+		fb: <a href=""><i class="fa-brands fa-facebook"></i></a>,
+		key: 3,
 	},
 ];
