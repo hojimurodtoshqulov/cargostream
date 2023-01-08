@@ -13,6 +13,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "./contact.scss";
 
+
 const Contact = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });

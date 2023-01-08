@@ -13,7 +13,7 @@ export default function NavbarLinks(params) {
 				<li>
 					<Link to="/">
 						<i class="fa-solid fa-house"></i>
-						Home
+						Главная
 					</Link>
 				</li>
 				<li>
