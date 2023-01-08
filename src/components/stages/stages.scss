@@ -18,11 +18,6 @@
 	}
 	[data-aos="fade-right"] {
 		margin-left: 30%;
-		display: flex;
-		align-items: center;
-		justify-self: flex-end;
-		justify-content: flex-end;
-		text-align: justify;
 	}
 	.stages-items {
 		display: flex;
@@ -66,7 +61,9 @@
 			font-size: 2.2em;
 			text-align: center;
 		}
-
+	[data-aos="fade-right"] {
+		margin-left: 20%;
+	}
 		.stages-items {
 			align-items: center;
 			gap: 1.8em;
@@ -93,8 +90,7 @@
 			font-size: 2em;
 		}
 		[data-aos="fade-right"] {
-			justify-self: flex-start;
-			justify-content: flex-start;
+		margin-left: 0;
 		}
 		.stages-items {
 			gap: 1.8em;

@@ -12,6 +12,7 @@ export const StagesDataCont = [
 		icon: <i className="fa-solid fa-phone"></i>,
 		titleCont: "Phone",
 		descriptionCont: <a href="tel:+998 93 543 38 11">+998 93 543 38 11</a>,
+		descriptionCont2: <a href="tel:+998 97 758 25 00">+998 97 758 25 00</a>,
 		key: 1,
 	},
 	{

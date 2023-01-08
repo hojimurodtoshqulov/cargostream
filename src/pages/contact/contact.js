@@ -24,6 +24,7 @@ const Contact = () => {
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<ShowBg bgImage={bgImg} title={"contact"} />
+<h2>contact</h2>
 			<div
 				id="submitDesctop"
 				className="stages-elements"
