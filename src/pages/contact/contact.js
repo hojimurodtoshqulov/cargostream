@@ -18,7 +18,7 @@ const Contact = () => {
 	}, []);
 	return (
 		<div className="contact">
-			<Nav />
+				<Nav />
 			<input type="checkbox" id="navLinks__menu" />
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
