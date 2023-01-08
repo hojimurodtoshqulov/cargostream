@@ -16,19 +16,21 @@
 		border-top: 2px solid;
 		border-bottom: 2px solid;
 		padding: 6% 0;
-
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
-
 			.stages-elements-col1 {
 				width: 48%;
 				.stages {
 					color: $dark;
-					
-
 					.stages-items {
+						display: flex;
+						justify-content: flex-start;
+						// align-items: flex-start;
+						gap: 2em;
+						width: 70%;
+						text-align: justify;
 						.orderNumber {
 							color: $reddish;
 						}
@@ -46,7 +48,7 @@
 
 				.submit {
 					color: $dark;
-					p{
+					p {
 						color: #666;
 					}
 					::placeholder {
@@ -76,19 +78,13 @@
 
 						textarea:focus {
 							border-bottom: 2px solid #666;
-
 						}
-
 					}
-
 				}
 			}
 		}
 	}
 }
-
-
-
 
 @media (max-width: $xl) {
 	.stages-elements {
@@ -110,16 +106,13 @@
 						font-size: 2.2em;
 						text-align: center;
 					}
-
 					.stages-items {
 						align-items: center;
 						gap: 1.8em;
 						width: 80%;
-
 						.orderNumber {
 							font-size: 5em;
 						}
-
 						.texts {
 							.title {
 								font-size: 1.6em;
@@ -136,16 +129,13 @@
 
 			.stages-elements-col2 {
 				width: 80%;
-
 				.submit {
 					width: $w_100;
 					flex-direction: column;
 					gap: 4em;
-
 					h2 {
 						font-size: 2.2em;
 					}
-
 					p {
 						font-size: 1.4em;
 						width: 90%;
@@ -234,7 +224,6 @@
 						}
 					}
 				}
-
 			}
 
 			.stages-elements-col2 {
@@ -315,7 +304,6 @@
 						}
 					}
 				}
-
 			}
 
 			.stages-elements-col2 {
@@ -369,7 +357,6 @@
 						font-size: 1.3em;
 					}
 				}
-
 			}
 
 			.stages-elements-col2 {

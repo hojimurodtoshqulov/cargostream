@@ -10,6 +10,7 @@ import { OurCompanyData } from "../../components/info/ourCompany/ourCompanyData/
 import OurServices from "../../components/info/ourServices/ourServices";
 import { OurServicesData } from "../../components/info/ourServices/ourServicesData/ourServicesData";
 import Stages from "../../components/stages/stages";
+import { StagesData } from "../../components/stages/stagesData/stagesData";
 import Submit from "../../components/submitApp/submit";
 import Aos from "aos";
 import "aos/dist/aos.css"; 
@@ -17,6 +18,7 @@ import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Rtl from "../../components/carousel/carousel";
 import { useEffect } from "react";
+
 const Home = () => {
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
@@ -46,7 +48,7 @@ const Home = () => {
 			>
 				<div className="wrapper">
 					<div className="stages-elements-col1">
-						<Stages />
+						<Stages stagesData = {StagesData}/>
 					</div>
 					<div className="stages-elements-col2">
 						<Submit />
@@ -62,17 +64,3 @@ const Home = () => {
 	);
 }
  export {Home}
-// export default function App() {
-
-//   return (
-//     <div>
-//       <button onClick={handleClick}>Scroll to element</button>
-
-//       <div style={{height: '155rem'}} />
-
-//       <div ref={ref}>Some content here</div>
-
-//       <div style={{height: '155rem'}} />
-//     </div>
-//   );
-// }

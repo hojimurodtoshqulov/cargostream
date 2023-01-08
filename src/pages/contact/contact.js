@@ -1,14 +1,15 @@
 import React from "react";
-import {Nav} from "../../components/navbar/nav";
+import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import "../../scss/main.scss";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
 import bgImg from "../../media/transportation-and-logistics-of-container-3f334ac6.jpeg";
 import Stages from "../../components/stages/stages";
+import { StagesDataCont } from "../../components/stages/stagesData/stagesDataCont";
 import Submit from "../../components/submitApp/submit";
 import Aos from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "./contact.scss";
 
@@ -31,7 +32,7 @@ const Contact = () => {
 			>
 				<div className="wrapper">
 					<div className="stages-elements-col1">
-						<Stages />
+						<Stages stagesData = {StagesDataCont} />
 					</div>
 					<div className="stages-elements-col2">
 						<Submit />
@@ -42,4 +43,4 @@ const Contact = () => {
 		</div>
 	);
 };
-export {Contact}
+export {Contact};
