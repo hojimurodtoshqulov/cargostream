@@ -14,7 +14,7 @@ const Stages = ({ stagesData }) => {
 					<h1 className="orderNumber">{item.orderNumber ?? item.icon}</h1>
 					<div className="texts">
 						<h3 className="title">{item.title ?? item.titleCont}</h3>
-						<p className="description">{item.description ?? item.descriptionCont}</p>
+						<p className="description">{item.description ?? item.descriptionCont}<br/>{item.descriptionCont2}</p>
 					</div>
 				</div>
 			))}
