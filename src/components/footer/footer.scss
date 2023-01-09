@@ -13,11 +13,10 @@ footer {
 		width: 16%;
 		object-fit: cover;
 		cursor: pointer;
-		
 	}
 	.nav__elements-callsDiv-calls {
 		width: auto;
-		
+
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -28,8 +27,17 @@ footer {
 			align-items: flex-start;
 		}
 	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+		gap: 0.5em;
+		li {
+			a {
+				font-size: 2rem;
+			}
+		}
+	}
 	.nav__otherElements {
-		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -62,6 +70,14 @@ footer {
 		}
 		.nav__elements-callsDiv-calls {
 			&-numbers {
+			}
+		}
+		ul {
+			gap: 1em;
+			li {
+				a {
+					font-size: 3rem;
+				}
 			}
 		}
 		.nav__otherElements {
@@ -110,6 +126,14 @@ footer {
 				font-size: 1em;
 			}
 		}
+		ul {
+			gap: 0.4em;
+			li {
+				a {
+					font-size: 1.5rem;
+				}
+			}
+		}
 		.nav__otherElements {
 			&-mail {
 				font-size: 1em;
@@ -133,6 +157,14 @@ footer {
 				font-size: 1em;
 			}
 		}
+		ul {
+			gap: 0.3em;
+			li {
+				a {
+					font-size: 1.2rem;
+				}
+			}
+		}
 		.nav__otherElements {
 			&-mail {
 				font-size: 0.8em;
@@ -141,6 +173,40 @@ footer {
 				&-img {
 					width: 18px;
 					height: 17px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: $md) {
+	footer {
+		.footer__logo {
+			width: 15%;
+		}
+		.nav__elements-callsDiv-calls {
+			&-numbers {
+				font-size: 1em;
+			}
+		}
+		ul {
+			gap: 0.2em;
+			li {
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+		.nav__otherElements {
+			&-mail {
+				font-size: 0.7em;
+				.fa-solid {
+					margin-right: 0;
+				}
+			}
+			&__language {
+				&-img {
+					width: 16px;
+					height: 15px;
 				}
 			}
 		}
@@ -161,6 +227,14 @@ footer {
 				font-size: 0.9em;
 			}
 		}
+		ul {
+			gap: 0.3em;
+			li {
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
 		.nav__otherElements {
 			&-mail {
 				font-size: 0.7em;
@@ -175,12 +249,11 @@ footer {
 		}
 	}
 }
-@media (max-width: $sm) {
+@media (max-width: $xs) {
 	footer {
 		overflow: hidden;
 		.footer__logo {
 			width: 50%;
-
 		}
 	}
 }

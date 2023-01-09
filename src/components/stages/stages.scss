@@ -8,8 +8,9 @@
 	width: $w_100;
 	display: flex;
 	flex-direction: column;
-	gap: 3em;
+	gap: 3.3em;
 	color: $light;
+	margin-top: 2rem;
 	h2 {
 		margin: 0 auto;
 		font-family: $font_titles;
@@ -31,9 +32,21 @@
 			font-size: 6em;
 			font-family: $font_btn;
 			.fa-solid {
+
 				font-size: 1.8rem;
 				color: $reddish;
 				}
+
+				font-size: 2rem;
+			}
+			a {
+				font-size: 2.5rem;
+				margin-left: 1rem;
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+
 		}
 		.texts {
 			.title {
@@ -52,7 +65,7 @@
 			}
 		}
 	}
-}
+
 
 @media (max-width: $xl) {
 	.stages {
@@ -61,9 +74,9 @@
 			font-size: 2.2em;
 			text-align: center;
 		}
-	[data-aos="fade-right"] {
-		margin-left: 20%;
-	}
+		[data-aos="fade-right"] {
+			margin-left: 20%;
+		}
 		.stages-items {
 			align-items: center;
 			gap: 1.8em;
@@ -90,11 +103,9 @@
 			font-size: 2em;
 		}
 		[data-aos="fade-right"] {
-
 			justify-self: flex-start;
 			justify-content: flex-start;
 			margin-left: 0;
-
 		}
 		.stages-items {
 			gap: 1.8em;

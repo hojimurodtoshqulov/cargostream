@@ -1,9 +1,9 @@
 import React from "react";
 import "../info.scss";
 import Button from "../../button/button";
-import { OurCompanyData } from "./ourCompanyData/ourCompanyData";
+
 import { Link } from "react-router-dom";
-const OurCompany = ({ infoData }) => {
+const OurCompany = ({ OurCompanyData }) => {
 	return (
 		<div className="info" data-aos="zoom-in-up" data-aos-duration="2000">
 			<div className="wrapper">

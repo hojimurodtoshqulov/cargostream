@@ -11,10 +11,17 @@ const Stages = ({ stagesData }) => {
 					data-aos-duration="1000"
 					key={item.key}
 				>
-					<h1 className="orderNumber">{item.orderNumber ?? item.icon}</h1>
+					<h1 className="orderNumber">
+						{item.orderNumber ?? item.icon} {item.tg} {item.ins}
+						{item.fb}
+					</h1>
 					<div className="texts">
 						<h3 className="title">{item.title ?? item.titleCont}</h3>
-						<p className="description">{item.description ?? item.descriptionCont}<br/>{item.descriptionCont2}</p>
+						<p className="description">
+							{item.description ?? item.descriptionCont}
+							<br />
+							{item.descriptionCont2}
+						</p>
 					</div>
 				</div>
 			))}
