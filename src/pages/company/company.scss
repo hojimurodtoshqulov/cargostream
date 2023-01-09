@@ -116,8 +116,12 @@
 		}
 	}
 }
+
 @media (max-width: $md) {
 	.company {
+		.page__title {
+			font-size: 1.9em;
+		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
 			.info {
@@ -146,8 +150,15 @@
 		}
 	}
 }
+
 @media (max-width: $sm) {
 	.company {
+		.page__title {
+			font-size: 1.2em;
+			top: 46vh;
+			width: 50%;
+			left: 25%;
+		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
 			.info {
@@ -164,6 +175,18 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+
+
+@media (max-width: $xs) {
+	.company{
+		.page__title {
+			width: 60%;
+			font-size: 1em;
+			left: 20%;
 		}
 	}
 }

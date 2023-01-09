@@ -22,18 +22,11 @@ const Contact = () => {
 	return (
 		<div className="contact main">
 
-				<Nav />
-			<input type="checkbox" id="navLinks__menu" />
-			<NavbarLinks />
-			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
-			<ShowBg bgImage={bgImg} />
-			<h2 className="contactitle">contact</h2>
-
 			<Nav />
 			<input type="checkbox" id="navLinks__menu" />
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
-			<ShowBg bgImage={bgImg} title={"contact"} />
+			<ShowBg bgImage={bgImg} />
 			<h2 className="page__title">contact</h2>
 			<div
 				id="submitDesctop"

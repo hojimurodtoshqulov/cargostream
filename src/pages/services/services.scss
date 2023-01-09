@@ -26,3 +26,36 @@
 		text-transform: capitalize;
 	}
 }
+
+
+@media (max-width: $md) {
+	.services {
+		.page__title {
+			font-size: 1.8em;
+		}
+		
+	}
+}
+
+@media (max-width: $sm) {
+	.services {
+		.page__title {
+			top: 47vh;
+			font-size: 1.4em;
+			width: 50%;
+			left: 25%;
+		}
+		
+	}
+}
+
+@media (max-width: $xs) {
+	.services {
+		.page__title {
+			font-size: 1em;
+			width: 60%;
+			left: 20%;
+		}
+		
+	}
+}
