@@ -6,7 +6,7 @@ const Cards = ({ cardsData }) => {
 	return (
 		<div className="cards">
 			{cardsData.map((item, index) => (
-				<div className="card">
+				<div className="card" data-aos="zoom-in-up" data-aos-duration="1000" key={index}>
 					<img src={item.img} alt="" />
 					<h3>{item.title}</h3>
 					<p> {item.description} </p>
