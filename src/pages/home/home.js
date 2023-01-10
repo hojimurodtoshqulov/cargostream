@@ -28,7 +28,6 @@ const Home = () => {
 				<ImageSlider slides={SliderData} />
 			</div>
 			<div className="infoDiv">
-				
 				<OurCompany OurCompanyData={OurCompanyData} />
 				<OurServices OurServicesData={OurServicesData} />
 			</div>
