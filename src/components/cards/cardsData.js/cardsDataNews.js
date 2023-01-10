@@ -33,6 +33,6 @@ export const cardsDataNews = [
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
-		key: "01",
+		key: "04",
 	},
 ];

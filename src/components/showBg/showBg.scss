@@ -6,17 +6,15 @@
 }
 .showBg {
 	width: 100%;
-// <<<<<<< HEAD
 	height: 70vh;
 	position: fixed;
 	z-index: -10;
-// =======
 	height: 50vh;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -12;
-// >>>>>>> 181eb1b1596a7ba7be572a7fdf3d9f5aa3da1e5e
+
 	&__img {
 		width: 100%;
 		height: 100%;

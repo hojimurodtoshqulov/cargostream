@@ -8,6 +8,7 @@ import ShowBg from "../../components/showBg/showBg";
 import bgImg from "../../media/news12.jpg";
 import { cardsData } from "../../components/cards/cardsData.js/cardsData";
 import { Cards } from "../../components/cards/cards";
+// import ModalComponent from "../../components/modal/modal";
 const Services = () => {
 	return (
 		<div className="main services">
@@ -20,6 +21,7 @@ const Services = () => {
 			<div className="wrapper">
 				<Cards cardsData={cardsData} />
 			</div>
+			{/* <ModalComponent /> */}
 			<Footer />
 		</div>
 	);
