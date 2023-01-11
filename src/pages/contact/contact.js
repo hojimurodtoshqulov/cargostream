@@ -33,10 +33,18 @@ const Contact = () => {
 				data-aos-duration="900"
 			>
 				<div className="wrapper">
-					<div className="stages-elements-col1">
+					<div
+						className="stages-elements-col1"
+						data-aos="fade-left"
+						data-aos-duration="1000"
+					>
 						<Stages stagesData={StagesDataCont} />
 					</div>
-					<div className="stages-elements-col2">
+					<div
+						className="stages-elements-col2"
+						data-aos="fade-left"
+						data-aos-duration="1000"
+					>
 						<Submit />
 					</div>
 				</div>

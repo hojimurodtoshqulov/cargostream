@@ -23,12 +23,11 @@ a:hover {
 	color: $light;
 	background-color: $reddish;
 	border-radius: 15px;
-	// border: 1px solid #fff;
 }
 ::-webkit-scrollbar-button {
 	background-color: $reddish;
 	color: $reddish;
-	border: 1px solid $light;
+	border: 1px solid $dark;
 }
 body {
 	overflow-x: hidden;

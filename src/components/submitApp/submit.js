@@ -4,7 +4,7 @@ import "./submit.scss";
 
 const Submit = () => {
 	return (
-		<div className="submit" data-aos="fade-left" data-aos-duration="1000">
+		<div className="submit">
 			<h2>Оставить заявку</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint excepturi

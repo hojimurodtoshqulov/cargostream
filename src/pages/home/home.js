@@ -1,5 +1,5 @@
 import React from "react";
-import {Nav} from "../../components/navbar/nav";
+import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import "../../scss/main.scss";
 import "./home.scss";
@@ -12,10 +12,11 @@ import { OurServicesData } from "../../components/info/ourServices/ourServicesDa
 import Stages from "../../components/stages/stages";
 import { StagesData } from "../../components/stages/stagesData/stagesData";
 import Submit from "../../components/submitApp/submit";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
-import Rtl from "../../components/carousel/carousel";
+import Carousel from "../../components/carousel/carousel";
+import { carouselData } from "../../components/carousel/carouselData/carouselData";
 
 const Home = () => {
 	return (
@@ -32,27 +33,30 @@ const Home = () => {
 				<OurServices OurServicesData={OurServicesData} />
 			</div>
 			<div className="stages-elements-bg" id="submit"></div>
-			<div
-				id="submitDesctop"
-				className="stages-elements"
-				data-aos="fade-left"
-				data-aos-duration="900"
-			>
+			<div id="submitDesctop" className="stages-elements">
 				<div className="wrapper">
-					<div className="stages-elements-col1">
-						<Stages stagesData = {StagesData}/>
+					<div
+						className="stages-elements-col1"
+						data-aos="fade-left"
+						data-aos-duration="1000"
+					>
+						<Stages stagesData={StagesData} />
 					</div>
-					<div className="stages-elements-col2">
+					<div
+						className="stages-elements-col2"
+						data-aos="fade-left"
+						data-aos-duration="1000"
+					>
 						<Submit />
 					</div>
 				</div>
 			</div>
 			<div className="partners-location">
-				<Rtl />
+				<Carousel carouselData={carouselData} />
 				<Location />
 			</div>
 			<Footer />
 		</div>
 	);
-}
- export {Home}
+};
+export { Home };

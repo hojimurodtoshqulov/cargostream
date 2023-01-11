@@ -4,10 +4,11 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import "./imageSlider.scss";
 import Button from "../button/button";
 import { useEffect } from "react";
-
+import Modal from "../modal/modal";
 const ImageSlider = ({ slides }) => {
 	const [current, setCurrent] = useState(0);
 	let [num, setNum] = useState(0);
+	const [openModal, setOpenModal] = useState(false);
 	const length = slides.length;
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1);
@@ -35,36 +36,45 @@ const ImageSlider = ({ slides }) => {
 	}
 
 	return (
-		<div className="slider">
-			<FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
-			<FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-			{SliderData.map((slide, index) => {
-				return (
-					<div
-						className={index === current ? "slide active" : "slide"}
-						key={index}
-					>
-						{index === current && (
-							<>
-								<img src={slide.image} alt="slider" className="image" />
-								<div className="slide-elements">
-									<p className="description">{slide.description}</p>
-									<h1 className="title">{slide.title}</h1>
-									<a href="#submitDesctop" id="submit_desctop">
-										<Button buttonTitle={slide.buttonTitle} />
-									</a>
-									<a href="#submitMobile" id="submit_mobile">
-										<Button buttonTitle={slide.buttonTitle} />
-									</a>
-								</div>
-								<div className="left-arrow-div" onClick={prevSlide}></div>
-								<div className="right-arrow-div" onClick={nextSlide}></div>
-							</>
-						)}
-					</div>
-				);
-			})}
-		</div>
+		<>
+			<div className="slider">
+				<FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+				<FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
+				{SliderData.map((slide, index) => {
+					return (
+						<div
+							className={index === current ? "slide active" : "slide"}
+							key={index}
+						>
+							{index === current && (
+								<>
+									<img src={slide.image} alt="slider" className="image" />
+									<div className="slide-elements">
+										<p className="description">{slide.description}</p>
+										<h1 className="title">{slide.title}</h1>
+										<a
+											onClick={() => {
+												setOpenModal(true);
+											}}
+										>
+											<Button buttonTitle={slide.buttonTitle} />
+										</a>
+									</div>
+									<div className="left-arrow-div" onClick={prevSlide}></div>
+									<div className="right-arrow-div" onClick={nextSlide}></div>
+								</>
+							)}
+						</div>
+					);
+				})}
+			</div>
+			<Modal
+				open={openModal}
+				onClose={() => setOpenModal(false)}
+				// modalData={cardsDataNews}
+				// id={idM ? idM : ""}
+			/>
+		</>
 	);
 };
 export default ImageSlider;

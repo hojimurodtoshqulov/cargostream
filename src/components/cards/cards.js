@@ -5,7 +5,6 @@ import Modal from "../modal/modal";
 import { cardsDataNews } from "./cardsData.js/cardsDataNews";
 const Cards = ({ cardsData, id }) => {
 	const [idM, setIdM] = useState(0);
-
 	const [openModal, setOpenModal] = useState(false);
 	return (
 		<>
@@ -33,12 +32,12 @@ const Cards = ({ cardsData, id }) => {
 					</div>
 				))}
 			</div>
-			<Modal
+			{/* <Modal
 				open={openModal}
 				onClose={() => setOpenModal(false)}
 				modalData={cardsDataNews}
 				id={idM ? idM : ''}
-			/>
+			/> */}
 		</>
 	);
 };

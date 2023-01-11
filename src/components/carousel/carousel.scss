@@ -13,6 +13,21 @@
 		font-size: 3em;
 		font-family: $font_titles;
 	}
+	button {
+		background: #ddd;
+		color: #dddddd;
+		height: 19px;
+		width: 20px;
+		border-radius: 50%;
+		&:hover {
+			color: #ddd;
+			background: #ddd;
+		}
+		&:focus {
+			color: #ddd;
+			background: #ddd;
+		}
+	}
 	&__elements {
 		width: 100px;
 		color: #fff;
@@ -29,7 +44,7 @@
 			margin: 3.5% 5%;
 			overflow: hidden;
 			border-radius: 10px;
-			box-shadow: 0 3px 5px rgba(0, 0, 0, 0.526);
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -49,9 +64,6 @@
 		padding: 5% 0;
 		&__elements {
 			height: 260px;
-			a {
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -62,9 +74,6 @@
 		}
 		&__elements {
 			height: 180px;
-			a {
-				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -75,9 +84,6 @@
 		}
 		&__elements {
 			height: 140px;
-			a {
-				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -88,9 +94,6 @@
 		}
 		&__elements {
 			height: 120px;
-			a {
-				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -101,9 +104,6 @@
 		}
 		&__elements {
 			height: 120px;
-			a {
-				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -114,9 +114,6 @@
 		}
 		&__elements {
 			height: 100px;
-			a {
-				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
@@ -127,9 +124,6 @@
 		}
 		&__elements {
 			height: 80px;
-			a {
-				box-shadow: 0 3px 8px rgba(0, 0, 0, 0.526);
-			}
 		}
 	}
 }
