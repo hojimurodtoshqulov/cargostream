@@ -11,6 +11,7 @@ export const newsData = [
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
+		aos: "fade-right",
 		key: "01",
 	},
 	{
@@ -19,6 +20,7 @@ export const newsData = [
 		description:
 			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
 		btnTitle: "readmore",
+		aos: "fade-left",
 		key: "02",
 	},
 	{
@@ -27,6 +29,7 @@ export const newsData = [
 		description:
 			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
 		btnTitle: "readmore",
+		aos: "fade-right",
 		key: "03",
 	},
 	{
@@ -35,6 +38,7 @@ export const newsData = [
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
+		aos: "fade-left",
 		key: "04",
 	},
 	{
@@ -43,6 +47,7 @@ export const newsData = [
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
+		aos: "fade-right",
 		key: "05",
 	},
 	{
@@ -51,6 +56,7 @@ export const newsData = [
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
+		aos: "fade-left",
 		key: "06",
 	},
 ];

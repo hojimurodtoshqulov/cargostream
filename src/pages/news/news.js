@@ -58,7 +58,7 @@ const News = () => {
 			>
 				<Slider {...settings}>
 					{newsData.map((data, index) => (
-						<div className="card" key={data.key}>
+						<div className="card" key={data.key} data-aos={data.aos}>
 							<div className="card__elements">
 								<img src={data.img} alt="" />
 								<h3>{data.title}</h3>
