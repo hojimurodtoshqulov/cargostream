@@ -27,21 +27,22 @@ const News = () => {
 			setNum(6);
 		}
 	};
-	const settings = {
-		dots: true,
-		infinite: true,
-		slidesToShow: num,
-		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 3000,
-		rtl: true,
-	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
 		return () => {
 			window.removeEventListener("scroll", listenScrollEvent);
 		};
 	}, []);
+	const settings = {
+		dots: true,
+		infinite: true,
+		slidesToShow: num,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		rtl: true,
+	};
+
 	return (
 		<div className="main news">
 			<Nav />
