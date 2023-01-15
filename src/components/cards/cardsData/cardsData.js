@@ -26,4 +26,12 @@ export const cardsData = [
 		btnTitle: "readmore",
 		key: "03",
 	},
+	{
+		img: serviceCardImg1,
+		title: "Air freight",
+		description:
+			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
+		btnTitle: "readmore",
+		key: "04",
+	},
 ];

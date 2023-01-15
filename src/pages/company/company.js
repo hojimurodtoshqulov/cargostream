@@ -19,10 +19,10 @@ const Company = () => {
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<ShowBg bgImage={bgImg} title={"Our company"} />
-			<h2 className="page__title">our company</h2>
+			<h2 className="page__title">О компани</h2>
 			<div className="infoDiv">
 				<OurCompany OurCompanyData={OurCompanyData2} />
-				<OurServices OurServicesData={OurServicesData2} />
+				{/* <OurServices OurServicesData={OurServicesData2} /> */}
 			</div>
 			<Footer />
 		</div>

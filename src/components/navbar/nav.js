@@ -11,15 +11,15 @@ const Nav = () => {
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#000");
 	const [navElements, setnavElements] = useState("block");
-	const [navLinks, setnavLinks] = useState("none");
+	const [navLinks, setnavLinks] = useState("block");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
 			? setnavColorBg("#181a1be5")
 			: setnavColorBg("transparent");
 		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
 		window.scrollY > 150 ? setnavColor("#fff") : setnavColor("#000");
-		window.scrollY > 150 ? setnavElements("none") : setnavElements("block");
-		window.scrollY > 150 ? setnavLinks("block") : setnavLinks("none");
+		// window.scrollY > 150 ? setnavElements("none") : setnavElements("block");
+		// window.scrollY > 150 ? setnavLinks("block") : setnavLinks("block");
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
@@ -39,7 +39,7 @@ const Nav = () => {
 		>
 			<img className="nav__logo" src={navLogo} alt="nav logo" />
 			<div className="nav__elements">
-				<h2
+				{/* <h2
 					className="nav__elements-title"
 					style={{
 						color: navColor,
@@ -56,7 +56,7 @@ const Nav = () => {
 					}}
 				>
 					<CallLink />
-				</div>
+				</div> */}
 				<div
 					className="nav__elements-linksDiv"
 					style={{

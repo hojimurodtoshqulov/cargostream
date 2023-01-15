@@ -42,7 +42,7 @@ export default function Carousel({ carouselData }) {
 			data-aos-duration="2000"
 			className="carousel wrapper"
 		>
-			<h2>Partners</h2>
+			<h2>Партнеры</h2>
 			<Slider {...settings}>
 				{carouselData.map((item, index) => (
 					<div className="carousel__elements" key={index} data-aos={item.aos} data-aos-duration="2000">

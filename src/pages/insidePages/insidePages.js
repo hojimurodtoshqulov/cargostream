@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "insidePages.scss";
 import "../../scss/main.scss";
 import { Nav } from "../../components/navbar/nav";
@@ -6,10 +6,7 @@ import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
 import bgImg from "../../media/company.png";
-import OurCompany from "../../components/info/ourCompany/ourCompany";
-import { OurCompanyData2 } from "../../components/info/ourCompany/ourCompanyData/ourCompanyData2";
-import OurServices from "../../components/info/ourServices/ourServices";
-import { OurServicesData2 } from "../../components/info/ourServices/ourServicesData/ourServicesData2";
+import { cardsData } from "../../components/cards/cardsData/cardsData";
 const InsidePages = () => {
 	return (
 		<div className="main company">
@@ -18,8 +15,25 @@ const InsidePages = () => {
 			<NavbarLinks />
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<ShowBg bgImage={bgImg} title={"Our company"} />
-			<h2 className="page__title">our company</h2>
-
+			<h2 className="page__title">
+				servises / <span>road</span>
+			</h2>
+			<div className="inside__elements">
+				<div className="inside__elements-col1">
+					<h3>OUR SERVICES</h3>
+					{cardsData.map(() => (
+						<div className="services__categories">
+							<img src="" alt="" />
+							<h4></h4>
+						</div>
+					))}
+				</div>
+				<div className="inside__elements-col2">
+					<h1></h1>
+					<img src="" alt="" />
+					<p></p>
+				</div>
+			</div>
 			<Footer />
 		</div>
 	);

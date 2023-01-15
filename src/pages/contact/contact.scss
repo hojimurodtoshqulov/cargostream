@@ -52,19 +52,15 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
-
 			.stages-elements-col1 {
 				width: 48%;
-
 				.stages {
 					color: $dark;
 					display: flex;
 					align-items: flex-start;
-
 					h2 {
 						display: none;
 					}
-
 					.stages-items {
 						display: flex;
 						justify-content: flex-start;
@@ -85,7 +81,7 @@
 						}
 
 						.texts {
-							width: 50%;
+							width: 70%;
 							text-align: start;
 
 							.description {

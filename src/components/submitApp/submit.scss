@@ -1,247 +1,214 @@
 @import "../../scss/varuables.scss";
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 ::placeholder {
-    color: #ddd;
+	color: #ddd;
 }
 
 .submit {
-    margin: 0;
-    padding: 0;
-    width: $w_100;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5em;
-    color: $light;
+	margin: 0;
+	padding: 0;
+	width: $w_100;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	color: $light;
 
-    h2 {
-        font-family: $font_titles;
-        font-size: 2.5em;
-        text-align: center;
-    }
+	h2 {
+		font-family: $font_titles;
+		font-size: 2.5em;
+		text-align: center;
+	}
 
-    p {
-        width: 70%;
-        text-align: justify;
-        font-family: $font_texts;
-        font-size: 1em;
-    }
+	p {
+		width: 100%;
+		text-align: justify;
+		font-family: $font_texts;
+		font-size: 1.1em;
+	}
 
-    ::placeholder {
-        color: $light;
-    }
+	::placeholder {
+		color: $light;
+	}
 
-    form {
-        width: $w_100;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        gap: 2em 0;
+	form {
+		width: $w_100;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2em 0;
+		input {
+			background: none;
+			padding: 1% 2%;
+			font-size: 1.5em;
+			border: none;
+			border-bottom: 1px solid $light;
+		}
+		input:focus {
+			border: none;
+			border-bottom: 2px solid $light;
+			outline: none;
+		}
+		.input-tell {
+			width: 48.5%;
+		}
+		.input-price {
+			width: 49%;
+		}
+		.input-name {
+			width: $w_100;
+		}
+		textarea {
+			background: none;
+			padding: 1% 2%;
+			width: $w_100;
+			font-size: 1.5em;
+			border: none;
+			border-bottom: 1px solid $light;
+		}
 
-        .input-name {
-            background: none;
-            padding: 1% 2%;
-            width: 48.5%;
-            font-size: 1.5em;
-            border: none;
-            border-bottom: 1px solid $light;
-        }
+		textarea:focus {
+			border: none;
+			border-bottom: 2px solid $light;
+			outline: none;
+		}
 
-        .input-name:focus {
-            border: none;
-            border-bottom: 2px solid $light;
-            outline: none;
-        }
+		.input-check-div {
+			width: 100%;
 
-        .input-tell {
-            background: none;
-            padding: 1% 2%;
-            width: 49%;
-            font-size: 1.5em;
-            border: none;
-            border-bottom: 1px solid $light;
-        }
+			label {
+				margin-left: 2%;
+				font-size: 1.1em;
+				font-family: $font_titles;
+			}
+		}
+	}
 
-        .input-tell:focus {
-            border: none;
-            border-bottom: 2px solid $light;
-            outline: none;
-        }
-
-        textarea {
-            background: none;
-            padding: 1% 2%;
-            width: $w_100;
-            font-size: 1.5em;
-            border: none;
-            border-bottom: 1px solid $light;
-        }
-
-        textarea:focus {
-            border: none;
-            border-bottom: 2px solid $light;
-            outline: none;
-        }
-
-        .input-check-div {
-            width: 100%;
-
-            label {
-                margin-left: 2%;
-                font-size: 1.1em;
-                font-family: $font_titles;
-            }
-        }
-    }
-
-    button {
-        align-self: flex-start;
-    }
+	button {
+		align-self: flex-start;
+	}
 }
 
 @media (max-width: $xl) {
-    .submit {
-        width: $w_100;
-        flex-direction: column;
-        gap: 4em;
+	.submit {
+		width: $w_100;
+		flex-direction: column;
+		gap: 4em;
 
-        h2 {
-            font-size: 2.2em;
-        }
+		h2 {
+			font-size: 2.2em;
+		}
 
-        p {
-            font-size: 1.4em;
-            width: 90%;
-        }
+		p {
+			font-size: 1.4em;
+			width: 90%;
+		}
 
-        form {
-            gap: 1em 0;
+		form {
+			gap: 1em 0;
+			input {
+				font-size: 1.2em;
+			}
+			.input-tell {
+				width: 48.5%;
+			}
+			.input-price {
+				width: 48.5%;
+			}
+			textarea {
+				font-size: 1.2em;
+			}
 
-            .input-name {
-                background: none;
-                padding: 1% 2%;
-                width: 48.5%;
-                font-size: 1.2em;
-            }
+			.input-check-div {
+				width: $w_100;
 
-            .input-tell {
-                width: 48.5%;
-                font-size: 1.2em;
-            }
-
-            textarea {
-                font-size: 1.2em;
-            }
-
-            .input-check-div {
-                width: $w_100;
-
-                label {
-                    font-size: 1.4em;
-                }
-            }
-        }
-    }
+				label {
+					font-size: 1.4em;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: $md) {
-    .submit {
-        width: $w_100;
-        flex-direction: column;
-        gap: 2.3em;
+	.submit {
+		width: $w_100;
+		flex-direction: column;
+		gap: 2.3em;
 
-        h2 {
-            font-size: 1.8em;
-        }
+		h2 {
+			font-size: 1.8em;
+		}
 
-        p {
-            font-size: 1.4em;
-            width: 90%;
-        }
+		p {
+			font-size: 1.4em;
+			width: 90%;
+		}
 
-        form {
-            gap: 1.5em 0;
+		form {
+			gap: 1.5em 0;
+			input {
+				font-size: 1.2em;
+			}
+			textarea {
+				font-size: 1.2em;
+			}
 
-            .input-name {
-                background: none;
-                padding: 1% 2%;
-                width: 48.5%;
-                font-size: 1.2em;
-            }
+			.input-check-div {
+				width: $w_100;
 
-            .input-tell {
-                width: 48.5%;
-                font-size: 1.2em;
-            }
-
-            textarea {
-                font-size: 1.2em;
-            }
-
-            .input-check-div {
-                width: $w_100;
-
-                label {
-                    font-size: 1.4em;
-                }
-            }
-        }
-    }
+				label {
+					font-size: 1.4em;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: $sm) {
-    .submit {
-        h2 {
-            font-size: 1.6em;
-        }
+	.submit {
+		h2 {
+			font-size: 1.6em;
+		}
 
-        p {
-            font-size: 1em;
-            width: 100%;
-        }
+		p {
+			font-size: 1em;
+			width: 100%;
+		}
 
-        form {
-            gap: 1.5em 0;
-
-            .input-name {
-                background: none;
-                padding: 1% 2%;
-                width: $w_100;
-                font-size: 1.2em;
-            }
-
-            .input-tell {
-                width: $w_100;
-                font-size: 1.2em;
-            }
-
-            textarea {
-                font-size: 1.2em;
-            }
-
-            .input-check-div {
-                label {
-                    font-size: 1.2em;
-                }
-            }
-        }
-    }
+		form {
+			gap: 1.5em 0;
+			.input-tell {
+				width: $w_100;
+			}
+			.input-name {
+				order: 2;
+				width: $w_100;
+			}
+			.input-price {
+				order: 3;
+				width: $w_100;
+			}
+			textarea {
+				order: 4;
+			}
+		}
+	}
 }
 
 @media (max-width: $xs) {
-    .submit {
-        gap: 2em;
-
-        h2 {
-            font-size: 1.3em;
-        }
-    }
+	.submit {
+		gap: 2em;
+		h2 {
+			font-size: 1.3em;
+		}
+	}
 }

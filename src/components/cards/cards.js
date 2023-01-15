@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./cards.scss";
 import Button from "../button/button";
 import Modal from "../modal/modal";
-import { cardsDataNews } from "./cardsData.js/cardsDataNews";
+import { cardsDataNews } from "./cardsData/cardsDataNews";
 const Cards = ({ cardsData, id }) => {
 	const [idM, setIdM] = useState(0);
 	const [openModal, setOpenModal] = useState(false);
@@ -32,12 +32,6 @@ const Cards = ({ cardsData, id }) => {
 					</div>
 				))}
 			</div>
-			{/* <Modal
-				open={openModal}
-				onClose={() => setOpenModal(false)}
-				modalData={cardsDataNews}
-				id={idM ? idM : ''}
-			/> */}
 		</>
 	);
 };

@@ -4,7 +4,7 @@ export const StagesDataCont = [
 		icon: <i class="fa-solid fa-location-dot"></i>,
 		titleCont: "Adress",
 		descriptionCont:
-			"Katta Xirmontepa, 2, Toshkent, Uchtepa tumani, 100135, Uzbekistan",
+			"Ташкентская область, Большой Узбекский Тракт, Эркин МФЙ, Highway Logistic Center, офис 408",
 		key: 0,
 	},
 	{
@@ -19,9 +19,7 @@ export const StagesDataCont = [
 		aos: "fade-left",
 		icon: <i className="fa-solid fa-envelope"></i>,
 		titleCont: "Email",
-		descriptionCont: (
-			<a href="cargostreamuz@gmail.com">cargostreamuz@gmail.com</a>
-		),
+		descriptionCont: <a href="cargostreamuz@gmail.com">cargostreamuz@gmail.com</a>,
 		key: 2,
 	},
 	{

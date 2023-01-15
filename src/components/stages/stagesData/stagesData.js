@@ -2,25 +2,25 @@ export const StagesData = [
 	{
 		aos: "fade-left",
 		orderNumber: "01",
-		title: "International cargo ",
+		title: "Оставляете заявку",
 		description:
-			"Tranportation of goods anywhere in the worldLorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit consequuntur nesciunt odio harum quis.",
+			"Вы оставляете заявку, наше менеджеры свяжутся и уточняют детали",
 		key: 0,
 	},
 	{
 		aos: "fade-right",
 		orderNumber: "02",
-		title: "International cargo ",
+		title: "Мы произведем рассчет",
 		description:
-			"Tranportation of goods anywhere in the worldLorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit consequuntur nesciunt odio harum quis.",
+			"Мы делаем расчеты растаможки, озвучим стоимость наших услуг",
 		key: 1,
 	},
 	{
 		aos: "fade-left",
 		orderNumber: "03",
-		title: "International cargo ",
+		title: "Мы выполняем работы",
 		description:
-			"Tranportation of goods anywhere in the worldLorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reprehenderit consequuntur nesciunt odio harum quis.",
+			"Вы принимаете решения - Мы начинаем работу",
 		key: 2,
 	},
 ];

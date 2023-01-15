@@ -10,7 +10,6 @@
 	flex-direction: column;
 	gap: 3.3em;
 	color: $light;
-	margin-top: 2rem;
 	h2 {
 		margin: 0 auto;
 		font-family: $font_titles;
@@ -34,36 +33,33 @@
 			.fa-solid {
 				font-size: 2rem;
 				color: $reddish;
-				}
-
 			}
-			a {
-				font-size: 2.5rem;
-				margin-left: 1rem;
-				&:hover {
-					transform: scale(1.05);
-				}
-			}
-
 		}
-		.texts {
-			.title {
-				font-size: 2em;
-				margin: 3% 0;
-				font-family: $font_texts;
-				text-align: start;
-			}
-			.description {
-				font-family: $font_texts;
-				font-size: 1em;
-				a {
-					font-family: $font_texts;
-					font-size: 1rem;
-				}
+		a {
+			font-size: 2.5rem;
+			margin-left: 1rem;
+			&:hover {
+				transform: scale(1.05);
 			}
 		}
 	}
-
+	.texts {
+		.title {
+			font-size: 1.8em;
+			margin: 3% 0;
+			font-family: $font_texts;
+			text-align: start;
+		}
+		.description {
+			font-family: $font_texts;
+			font-size: 1.2em;
+			a {
+				font-family: $font_texts;
+				font-size: 1rem;
+			}
+		}
+	}
+}
 
 @media (max-width: $xl) {
 	.stages {
@@ -152,7 +148,6 @@
 	.stages {
 		h2 {
 			font-size: 1.3em;
-			
 		}
 	}
 }

@@ -3,7 +3,7 @@ import "./stages.scss";
 const Stages = ({ stagesData }) => {
 	return (
 		<div className="stages">
-			<h2>Етапи работи</h2>
+			<h2>Этапы работы</h2>
 			{stagesData.map((item, index) => (
 				<div
 					className="stages-items"

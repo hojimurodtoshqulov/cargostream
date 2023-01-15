@@ -71,8 +71,6 @@ const ImageSlider = ({ slides }) => {
 			<Modal
 				open={openModal}
 				onClose={() => setOpenModal(false)}
-				// modalData={cardsDataNews}
-				// id={idM ? idM : ""}
 			/>
 		</>
 	);
