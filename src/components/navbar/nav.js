@@ -21,8 +21,8 @@ const Nav = () => {
 		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
 		window.scrollY > 150 ? setnavColor("#fff") : setnavColor("#000");
 		window.scrollY > 150
-			? setnavColor("none")
-			: setnavColor("1px 1px 10px rgba(255, 255, 255, 0.545)");
+			? setnavTextShadow("none")
+			: setnavTextShadow("1px 1px 10px rgba(255, 255, 255, 0.545)");
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
