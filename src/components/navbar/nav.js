@@ -10,7 +10,9 @@ const Nav = () => {
 	const [navSize, setnavSize] = useState("100px");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#000");
-	const [navElements, setnavElements] = useState("block");
+	const [navTextShadow, setnavTextShadow] = useState(
+		"1px 1px 10px rgba(255, 255, 255, 0.545)"
+	);
 	const [navLinks, setnavLinks] = useState("block");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
@@ -18,8 +20,9 @@ const Nav = () => {
 			: setnavColorBg("transparent");
 		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
 		window.scrollY > 150 ? setnavColor("#fff") : setnavColor("#000");
-		// window.scrollY > 150 ? setnavElements("none") : setnavElements("block");
-		// window.scrollY > 150 ? setnavLinks("block") : setnavLinks("block");
+		window.scrollY > 150
+			? setnavColor("none")
+			: setnavColor("1px 1px 10px rgba(255, 255, 255, 0.545)");
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
@@ -64,7 +67,12 @@ const Nav = () => {
 						display: navLinks,
 					}}
 				>
-					<ul className="nav__elements-linksDiv-ul">
+					<ul
+						className="nav__elements-linksDiv-ul"
+						style={{
+							textShadow: navTextShadow,
+						}}
+					>
 						<li>
 							<Link to="/">Главная</Link>
 						</li>

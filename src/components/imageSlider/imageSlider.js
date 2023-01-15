@@ -50,8 +50,8 @@ const ImageSlider = ({ slides }) => {
 								<>
 									<img src={slide.image} alt="slider" className="image" />
 									<div className="slide-elements">
-										<p className="description">{slide.description}</p>
 										<h1 className="title">{slide.title}</h1>
+										<p className="description">{slide.description}</p>
 										<a
 											onClick={() => {
 												setOpenModal(true);
