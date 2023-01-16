@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import navLogo from "../../media/logo.png";
-import CallLink from "./callLinks/callLinks";
+// import CallLink from "./callLinks/callLinks";
 import engLogo from "../../media/UK-Union-Flag.png";
 import ruLogo from "../../media/russianFlag.png";
 import "./nav.scss";
@@ -13,7 +13,7 @@ const Nav = () => {
 	const [navTextShadow, setnavTextShadow] = useState(
 		"1px 1px 10px rgba(255, 255, 255, 0.545)"
 	);
-	const [navLinks, setnavLinks] = useState("block");
+	// const [navLinks, setnavLinks] = useState("block");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
 			? setnavColorBg("#181a1be5")
@@ -64,7 +64,7 @@ const Nav = () => {
 					className="nav__elements-linksDiv"
 					style={{
 						color: navColor,
-						display: navLinks,
+						// display: navLinks,
 					}}
 				>
 					<ul

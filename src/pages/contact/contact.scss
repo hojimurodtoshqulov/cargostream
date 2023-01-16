@@ -1,11 +1,9 @@
 @import "../../scss/varuables.scss";
 
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
 }
 
 ::placeholder {
@@ -21,6 +19,7 @@
 	background: #fff;
 	width: $w_100;
 	overflow: hidden;
+	// position: relative;
 	z-index: 123;
 	.page__title {
 		position: absolute;
@@ -150,14 +149,11 @@
 				align-items: center;
 				gap: 50px;
 
-
 				.stages-elements-col1 {
 					width: 80%;
 
-
 					.stages-elements-col1 {
 						width: 80%;
-
 
 						.stages {
 							width: $w_100;
@@ -450,7 +446,7 @@
 }
 
 @media (max-width: $xs) {
-	.contact{
+	.contact {
 		.page__title {
 			width: 60%;
 			font-size: 1em;
@@ -465,11 +461,11 @@
 						}
 					}
 				}
-	
+
 				.stages-elements-col2 {
 					.submit {
 						gap: 2em;
-	
+
 						h2 {
 							font-size: 1.3em;
 						}
@@ -479,6 +475,3 @@
 		}
 	}
 }
-
-
-

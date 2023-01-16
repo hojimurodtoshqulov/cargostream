@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "./cards.scss";
 import Button from "../button/button";
-import Modal from "../modal/modal";
-import { cardsDataNews } from "./cardsData/cardsDataNews";
+import {Link} from "react-router-dom";
 const Cards = ({ cardsData, id }) => {
 	const [idM, setIdM] = useState(0);
-	const [openModal, setOpenModal] = useState(false);
 	return (
 		<>
 			<div className="cards">
@@ -15,18 +13,16 @@ const Cards = ({ cardsData, id }) => {
 						data-aos="zoom-in-up"
 						data-aos-duration="1000"
 						key={index}
-						onClick={() => setOpenModal(true)}
 					>
 						<img src={item.img} alt="" />
 						<h3>{item.title}</h3>
 						<p> {item.description} </p>
 						<span
 							onClick={() => {
-								setOpenModal(true);
 								setIdM(item.key);
 							}}
 						>
-							<Button buttonTitle={item.btnTitle} />
+							<Link to={item.link}><Button buttonTitle={item.btnTitle} /></Link>
 							{idM ? console.log(idM) : ""}
 						</span>
 					</div>

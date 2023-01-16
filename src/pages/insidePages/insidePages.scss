@@ -1,5 +1,92 @@
+@import "../../scss/varuables.scss";
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+.inside {
+	margin-top: 40vh;
+	background: #fff;
+	width: $w_100;
+	overflow: hidden;
+	.page__title {
+		width: 36%;
+		position: absolute;
+		left: 32%;
+		top: 32vh;
+		overflow: hidden;
+		padding: 1% 0 2% 0;
+		font-family: $font_titles;
+		font-size: 3em;
+		text-align: center;
+		color: $dark;
+		font-weight: 500;
+		background: $light;
+		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.698);
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.647);
+		z-index: 12;
+		border-radius: $br_r_5;
+		text-transform: capitalize;
+		span {
+			font-size: 1.5rem;
+		}
+	}
+	.inside__elements {
+		padding: 7% 5%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		&-col1 {
+			width: 27%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 1rem;
+
+			h3 {
+				color: $reddish;
+				border-bottom: 3px solid $reddish;
+				text-align: center;
+				margin: 0 auto;
+			}
+			&-categories {
+				width: $w_100;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 0.7rem;
+				cursor: pointer;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 1rem;
+				img {
+					height: 100px;
+					width: 150px;
+					object-fit: cover;
+					border-radius: $br_r_5;
+				}
+			}
+		}
+		&-col2 {
+			//
+			width: 65%;
+			&-elements {
+				//
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+				img {
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+					border-radius: $br_r_5;
+				}
+				p {
+					font-family: $font_texts;
+					color: #666;
+					line-height: 1.5rem;
+				}
+			}
+		}
+	}
 }
