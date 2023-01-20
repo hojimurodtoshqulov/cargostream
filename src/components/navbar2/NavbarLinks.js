@@ -9,10 +9,9 @@ export default function NavbarLinks(params) {
 		<div className="nav__links">
 			<img className="nav__logo" src={navLogo} alt="nav logo" />
 			<h2 className="nav__links-title">таможня и логистика в узбекистане</h2>
-			<ul>
+			<ul className="nav__links-menu">
 				<li>
 					<Link to="/">
-
 						<i class="fa-solid fa-house"></i>
 						Главная
 					</Link>
@@ -41,8 +40,26 @@ export default function NavbarLinks(params) {
 					</Link>
 				</li>
 			</ul>
+
 			<div className="nav__links-mobileElements">
 				<CallLink />
+				<ul className="nav__links-mobileElements-media">
+					<li>
+						<a href="">
+							<i class="fa-brands fa-telegram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+					</li>
+				</ul>
 				<MailLang />
 			</div>
 		</div>

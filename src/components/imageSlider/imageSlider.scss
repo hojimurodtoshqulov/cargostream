@@ -1,5 +1,4 @@
 
-
 @import "../../scss/main.scss";
 * {
 	padding: 0;
@@ -23,7 +22,7 @@
 	.slide-elements {
 		width: 50%;
 		position: absolute;
-		top: 30%;
+		top: 40%;
 		left: 25%;
 		z-index: 1234;
 		display: flex;
@@ -32,18 +31,19 @@
 		justify-content: space-between;
 		gap: 1rem;
 		text-align: center;
-		.description {
-			font-size: 1.8rem;
-			font-family: sans-serif;
-			color: #fff;
-			text-align: center;
-			text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.545);
-		}
+
 		.title {
 			text-align: start;
 			text-transform: uppercase;
 			color: $light;
-			font-size: 3rem;
+			font-size: 2rem;
+			text-align: center;
+			text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.545);
+		}
+		.description {
+			font-size: 1.8rem;
+			font-family: sans-serif;
+			color: #fff;
 			text-align: center;
 			text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.545);
 		}
@@ -53,9 +53,6 @@
 				width: 100%;
 				overflow: hidden;
 			}
-		}
-		#submit_mobile {
-			display: none;
 		}
 	}
 }
@@ -147,7 +144,7 @@
 				color: $light;
 			}
 			.title {
-				font-size: 4rem;
+				font-size: 3rem;
 			}
 			a {
 				width: auto;
@@ -186,12 +183,6 @@
 				button {
 					width: 100%;
 				}
-			}
-			#submit_desctop {
-				display: none;
-			}
-			#submit_mobile {
-				display: block;
 			}
 		}
 	}

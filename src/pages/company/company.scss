@@ -6,20 +6,22 @@
 }
 .company {
 	background: #fff;
-	margin-top: 50vh;
+	margin-top: 40vh;
 	.page__title {
+		// border: 2px solid red; 
 		position: absolute;
-		left: 30%;
-		top: 44vh;
+		left: 37%;
+		top: 32vh;
 		overflow: hidden;
 		padding: 1% 0 2% 0;
 		font-family: $font_titles;
-		font-size: 2em;
-		width: 40%;
+		font-size: 3em;
+		width: 26%;
 		text-align: center;
 		color: $dark;
+		font-weight: 500;
 		background: $light;
-		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.698);
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.698);
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.647);
 		z-index: 12;
 		border-radius: $br_r_5;
@@ -34,7 +36,15 @@
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				gap: 2em;
+				gap: 4em;
+				& :nth-child(2) {
+					.info-img-div {
+						order: 2;
+					}
+					.info-titles-div {
+						order: 1;
+					}
+				}
 				.info-elements {
 					display: flex;
 					align-items: center;
@@ -53,7 +63,7 @@
 						}
 					}
 					.info-titles-div {
-						width: 43%;
+						width: 45%;
 						display: flex;
 						flex-wrap: wrap;
 						gap: 2em;
@@ -69,24 +79,24 @@
 							font-family: $font_texts;
 							font-weight: 500;
 							color: #666;
-							line-height: 28px;
+							line-height: 33px;
 						}
 						button {
 							display: none;
 						}
 					}
-					.info-img-div2 {
-						order: 2;
-					}
-					.info-titles-div2 {
-						order: 1;
-						justify-content: flex-end;
-						h2 {
-							justify-self: flex-end;
-							align-self: flex-end;
-							text-align: end;
-						}
-					}
+					// .info-img-div2 {
+					// 	order: 2;
+					// }
+					// .info-titles-div2 {
+					// 	order: 1;
+					// 	justify-content: flex-end;
+					// 	h2 {
+					// 		justify-self: flex-end;
+					// 		align-self: flex-end;
+					// 		text-align: end;
+					// 	}
+					// }
 				}
 			}
 		}
@@ -94,6 +104,13 @@
 }
 @media (max-width: $xl) {
 	.company {
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
 		.infoDiv {
 			padding: 10% 0 5% 0;
 			.info {
@@ -117,10 +134,25 @@
 	}
 }
 
+@media (max-width: $lg) {
+	.company {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
+	}
+}
+
 @media (max-width: $md) {
 	.company {
 		.page__title {
-			font-size: 1.9em;
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
 		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
@@ -154,10 +186,10 @@
 @media (max-width: $sm) {
 	.company {
 		.page__title {
-			font-size: 1.2em;
-			top: 46vh;
-			width: 50%;
-			left: 25%;
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
 		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
@@ -179,14 +211,14 @@
 	}
 }
 
-
-
 @media (max-width: $xs) {
-	.company{
+	.company {
 		.page__title {
-			width: 60%;
-			font-size: 1em;
 			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
 		}
 	}
 }

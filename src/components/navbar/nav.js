@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import navLogo from "../../media/logo.png";
-import CallLink from "./callLinks/callLinks";
+// import CallLink from "./callLinks/callLinks";
 import engLogo from "../../media/UK-Union-Flag.png";
 import ruLogo from "../../media/russianFlag.png";
 import "./nav.scss";
@@ -10,16 +10,19 @@ const Nav = () => {
 	const [navSize, setnavSize] = useState("100px");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#000");
-	const [navElements, setnavElements] = useState("block");
-	const [navLinks, setnavLinks] = useState("none");
+	const [navTextShadow, setnavTextShadow] = useState(
+		"1px 1px 10px rgba(255, 255, 255, 0.545)"
+	);
+	// const [navLinks, setnavLinks] = useState("block");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
 			? setnavColorBg("#181a1be5")
 			: setnavColorBg("transparent");
 		window.scrollY > 150 ? setnavSize("80px") : setnavSize("110px");
 		window.scrollY > 150 ? setnavColor("#fff") : setnavColor("#000");
-		window.scrollY > 150 ? setnavElements("none") : setnavElements("block");
-		window.scrollY > 150 ? setnavLinks("block") : setnavLinks("none");
+		window.scrollY > 150
+			? setnavTextShadow("none")
+			: setnavTextShadow("1px 1px 10px rgba(255, 255, 255, 0.545)");
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
@@ -39,7 +42,7 @@ const Nav = () => {
 		>
 			<img className="nav__logo" src={navLogo} alt="nav logo" />
 			<div className="nav__elements">
-				<h2
+				{/* <h2
 					className="nav__elements-title"
 					style={{
 						color: navColor,
@@ -56,15 +59,20 @@ const Nav = () => {
 					}}
 				>
 					<CallLink />
-				</div>
+				</div> */}
 				<div
 					className="nav__elements-linksDiv"
 					style={{
 						color: navColor,
-						display: navLinks,
+						// display: navLinks,
 					}}
 				>
-					<ul className="nav__elements-linksDiv-ul">
+					<ul
+						className="nav__elements-linksDiv-ul"
+						style={{
+							textShadow: navTextShadow,
+						}}
+					>
 						<li>
 							<Link to="/">Главная</Link>
 						</li>

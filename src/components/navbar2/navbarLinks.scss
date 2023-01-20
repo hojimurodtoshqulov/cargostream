@@ -6,95 +6,7 @@
 }
 // nav links
 .nav__links {
-	width: $w_50;
-	position: absolute;
-	top: 0px;
-	right: 25%;
-	z-index: 123;
-	border-radius: $br_r_10;
-	height: 60px;
-	margin: 0 auto;
-	margin-top: 100px;
-	background-color: rgba(0, 0, 0, 0.307);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	.nav__logo {
-		display: none;
-	}
-	&-title {
-		display: none;
-	}
-	&-mobileElements {
-		display: none;
-	}
-	ul {
-		width: 70%;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		overflow: hidden;
-		Link {
-			width: 100%;
-		}
-		li {
-			color: $light;
-			border-bottom: 2px solid rgba(255, 0, 0, 0);
-			transition: 1s;
-			font-size: 1.2em;
-			color: $light;
-			transition: 1s;
-			.fa-solid {
-				display: none;
-			}
-			&:hover {
-				border-bottom: 2px solid $denger;
-				color: $denger;
-			}
-		}
-	}
-}
-@media (min-width: $xxl) {
-	.nav__links {
-		width: 40%;
-		top: 10px;
-		right: 30%;
-		height: 70px;
-		ul {
-			width: 70%;
-			li {
-				font-size: 1.8em;
-			}
-		}
-	}
-}
-@media (max-width: $xl) {
-	.nav__links {
-		width: $w_50;
-		top: 0px;
-		right: 25%;
-		height: 60px;
-		ul {
-			width: 75%;
-			li {
-				font-size: 1.2em;
-			}
-		}
-	}
-}
-@media (max-width: $lg) {
-	.nav__links {
-		width: $w_50;
-		top: 0px;
-		right: 25%;
-		height: 60px;
-		ul {
-			width: 85%;
-			li {
-				font-size: 1.1em;
-			}
-		}
-	}
+	display: none;
 }
 @media (max-width: $md) {
 	.nav__links {
@@ -128,7 +40,7 @@
 			text-transform: uppercase;
 			font-size: 1.3rem;
 		}
-		ul {
+		&-menu {
 			height: auto;
 			width: 100%;
 			display: flex;
@@ -155,12 +67,17 @@
 			}
 		}
 		&-mobileElements {
-			display: block;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			justify-content: space-bj etween;
+			justify-content: space-between;
 			gap: 1rem;
+			&-media {
+				display: flex;
+				gap: 0.5em;
+				font-size: 1.4rem;
+				color: white;
+			}
 			.nav__elements-callsDiv-calls {
 				width: 100%;
 				display: flex;
@@ -206,7 +123,7 @@
 		h2 {
 			font-size: 1.1rem;
 		}
-		ul {
+		&-menu {
 			li {
 				padding: 5% 0;
 				width: $w_100;
@@ -219,12 +136,9 @@
 			}
 		}
 		&-mobileElements {
-			display: block;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: space-between;
-			gap: 1rem;
+			&-media {
+				font-size: 1.2rem;
+			}
 			.nav__elements-callsDiv-calls {
 				width: 100%;
 				display: flex;

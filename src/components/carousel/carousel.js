@@ -1,15 +1,9 @@
 import Slider from "react-slick";
-import "./carousel.scss";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
-import partner1 from "../../media/partner1.png";
-import partner2 from "../../media/partner2.png";
-import partner3 from "../../media/partner3.png";
-import partner4 from "../../media/partner4.png";
-import partner5 from "../../media/partner5.png";
-import partner6 from "../../media/partner6.png";
+import "./carousel.scss";
 
-export default function Rtl() {
+export default function Carousel({ carouselData }) {
 	const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	const [num, setNum] = useState(5);
 	const listenScrollEvent = () => {
@@ -48,38 +42,15 @@ export default function Rtl() {
 			data-aos-duration="2000"
 			className="carousel wrapper"
 		>
-			<h2>Partners</h2>
+			<h2>Партнеры</h2>
 			<Slider {...settings}>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner1} alt="partner1 img" />
-					</a>
-				</div>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner2} alt="parner2 img" />
-					</a>
-				</div>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner3} alt="partner3 img" />
-					</a>
-				</div>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner4} alt="partner4 img" />
-					</a>
-				</div>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner5} alt="partner5 img" />
-					</a>
-				</div>
-				<div className="carousel__elements">
-					<a href="https://www.ark-logistics.uz/home">
-						<img src={partner6} alt="partner6 img" />
-					</a>
-				</div>
+				{carouselData.map((item, index) => (
+					<div className="carousel__elements" key={index} data-aos={item.aos} data-aos-duration="2000">
+						<a href={item.url}>
+							<img src={item.image} alt="partner img" />
+						</a>
+					</div>
+				))}
 			</Slider>
 		</div>
 	);

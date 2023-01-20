@@ -7,21 +7,29 @@ const Submit = () => {
 		<div className="submit">
 			<h2>Оставить заявку</h2>
 			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint excepturi
-				quibusdam temporibus nesciunt est obcaecati necessitatibus, accusamus
-				error esse asperiores!
+				Мы всегда открыты для диалога, предложений и комментариев. Мы хотим,
+				чтобы у наших клиентов всегда была возможность связаться с нами и задать
+				вопросы. Вы можете найти наш офис на карте или позвонить по нашему
+				номеру, и у вас есть возможность отправить свой запрос через специальную
+				форму ниже.
 			</p>
 			<form action="" className="">
 				<input
-					className="input-name form-control search-input"
+					className="input-tell form-control search-input"
 					type="text"
-					placeholder="Your name"
+					placeholder="тел"
 					required
 				/>
 				<input
-					className="input-tell form-control search-input"
+					className="input-price form-control search-input"
 					type="text"
-					placeholder="Your number"
+					placeholder="сумма"
+					required
+				/>
+				<input
+					className="input-name form-control search-input"
+					type="text"
+					placeholder="товар"
 					required
 				/>
 				<textarea
@@ -29,9 +37,8 @@ const Submit = () => {
 					id=""
 					cols="50"
 					rows="1"
-					placeholder="Comment"
+					placeholder="коментарии"
 				></textarea>
-
 			</form>
 			<Button buttonTitle={"Оставить заявку"} />
 		</div>

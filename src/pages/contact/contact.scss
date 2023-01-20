@@ -1,11 +1,9 @@
 @import "../../scss/varuables.scss";
 
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-
 }
 
 ::placeholder {
@@ -17,24 +15,24 @@
 }
 
 .contact {
-	margin-top: 50vh;
+	margin-top: 40vh;
 	background: #fff;
 	width: $w_100;
 	overflow: hidden;
+	// position: relative;
 	z-index: 123;
-
-
 	.page__title {
 		position: absolute;
-		left: 30%;
-		top: 44vh;
+		left: 37%;
+		top: 32vh;
 		overflow: hidden;
 		padding: 1% 0 2% 0;
 		font-family: $font_titles;
-		font-size: 2em;
-		width: 40%;
+		font-size: 3em;
+		width: 26%;
 		text-align: center;
 		color: $dark;
+		font-weight: 500;
 		background: $light;
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.698);
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.647);
@@ -53,19 +51,15 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
-
 			.stages-elements-col1 {
 				width: 48%;
-
 				.stages {
 					color: $dark;
 					display: flex;
 					align-items: flex-start;
-
 					h2 {
 						display: none;
 					}
-
 					.stages-items {
 						display: flex;
 						justify-content: flex-start;
@@ -86,7 +80,7 @@
 						}
 
 						.texts {
-							width: 50%;
+							width: 70%;
 							text-align: start;
 
 							.description {
@@ -145,7 +139,13 @@
 @media (max-width: $xl) {
 	.contact {
 		width: $w_100;
-
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
 		.stages-elements {
 			padding: 10% 0;
 
@@ -155,14 +155,11 @@
 				align-items: center;
 				gap: 50px;
 
-
 				.stages-elements-col1 {
 					width: 80%;
 
-
 					.stages-elements-col1 {
 						width: 80%;
-
 
 						.stages {
 							width: $w_100;
@@ -261,6 +258,13 @@
 
 @media (max-width: $lg) {
 	.contact {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
 		.stages-elements {
 			padding: 14% 0 18% 0;
 
@@ -280,7 +284,10 @@
 @media (max-width: $md) {
 	.contact {
 		.page__title {
-			font-size: 1.8em;
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
 		}
 
 		.stages-elements {
@@ -370,10 +377,10 @@
 @media (max-width: $sm) {
 	.contact {
 		.page__title {
-			top: 47vh;
-			font-size: 1.4em;
-			width: 50%;
-			left: 25%;
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
 		}
 
 		.stages-elements {
@@ -455,11 +462,13 @@
 }
 
 @media (max-width: $xs) {
-	.contact{
+	.contact {
 		.page__title {
-			width: 60%;
-			font-size: 1em;
 			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
 		}
 		.stages-elements {
 			.wrapper {
@@ -470,11 +479,11 @@
 						}
 					}
 				}
-	
+
 				.stages-elements-col2 {
 					.submit {
 						gap: 2em;
-	
+
 						h2 {
 							font-size: 1.3em;
 						}
@@ -484,6 +493,3 @@
 		}
 	}
 }
-
-
-
