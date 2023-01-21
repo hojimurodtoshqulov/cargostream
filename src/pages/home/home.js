@@ -28,6 +28,8 @@ const Home = () => {
 			<div className="slider_div">
 				<ImageSlider slides={SliderData} />
 			</div>
+			{/* <div style={{border:"2px solid red", height:"200px"}}>
+			</div> */}
 			<div className="infoDiv">
 				<OurCompany OurCompanyData={OurCompanyData} />
 				<OurServices OurServicesData={OurServicesData} />

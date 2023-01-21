@@ -128,6 +128,13 @@
 
 @media (max-width: $xl) {
 	.news {
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
 		.wrapper {
 			.cards {
 				padding: 10% 0;
@@ -157,6 +164,13 @@
 
 @media (max-width: $lg) {
 	.news {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
 		.wrapper {
 			.cards {
 				padding: 10% 0;
@@ -186,7 +200,10 @@
 @media (max-width: $md) {
 	.news {
 		.page__title {
-			font-size: 1.8em;
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
 		}
 		.wrapper {
 			.cards {
@@ -218,10 +235,10 @@
 @media (max-width: $sm) {
 	.news {
 		.page__title {
-			top: 47vh;
-			font-size: 1.4em;
-			width: 50%;
-			left: 25%;
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
 		}
 		.wrapper {
 			.cards {
@@ -247,7 +264,11 @@
 @media (max-width: $xs) {
 	.news {
 		.page__title {
-			font-size: 1em;
+			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
 		}
 
 		.wrapper {

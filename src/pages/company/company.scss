@@ -8,6 +8,7 @@
 	background: #fff;
 	margin-top: 40vh;
 	.page__title {
+		// border: 2px solid red; 
 		position: absolute;
 		left: 37%;
 		top: 32vh;
@@ -84,18 +85,6 @@
 							display: none;
 						}
 					}
-					// .info-img-div2 {
-					// 	order: 2;
-					// }
-					// .info-titles-div2 {
-					// 	order: 1;
-					// 	justify-content: flex-end;
-					// 	h2 {
-					// 		justify-self: flex-end;
-					// 		align-self: flex-end;
-					// 		text-align: end;
-					// 	}
-					// }
 				}
 			}
 		}
@@ -103,6 +92,13 @@
 }
 @media (max-width: $xl) {
 	.company {
+		.page__title {
+			left: 35%;
+			top: 32vh;
+			padding: 1% 0 2% 0;
+			font-size: 2.9em;
+			width: 30%;
+		}
 		.infoDiv {
 			padding: 10% 0 5% 0;
 			.info {
@@ -126,10 +122,25 @@
 	}
 }
 
+@media (max-width: $lg) {
+	.company {
+		.page__title {
+			left: 31%;
+			top: 34vh;
+			padding: 0% 0 1% 0;
+			font-size: 2.6em;
+			width: 38%;
+		}
+	}
+}
+
 @media (max-width: $md) {
 	.company {
 		.page__title {
-			font-size: 1.9em;
+			left: 28%;
+			top: 35vh;
+			font-size: 2.4em;
+			width: 44%;
 		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
@@ -163,10 +174,10 @@
 @media (max-width: $sm) {
 	.company {
 		.page__title {
-			font-size: 1.2em;
-			top: 46vh;
-			width: 50%;
-			left: 25%;
+			left: 26%;
+			top: 36vh;
+			font-size: 1.8em;
+			width: 48%;
 		}
 		.infoDiv {
 			padding: 15% 0 5% 0;
@@ -191,9 +202,11 @@
 @media (max-width: $xs) {
 	.company {
 		.page__title {
-			width: 60%;
-			font-size: 1em;
 			left: 20%;
+			top: 37vh;
+			font-size: 1.3em;
+			width: 60%;
+			padding: 0 1%;
 		}
 	}
 }
