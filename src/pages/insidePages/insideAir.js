@@ -18,7 +18,7 @@ const InsideAir = () => {
 			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 			<ShowBg bgImage={bgImg} title={"Our company"} />
 			<h2 className="page__title">
-				Услуги <span>/ АВИАПЕРЕВОЗКИ</span>
+				Услуги <span>/ Авиаперевозки</span>
 			</h2>
 			<div className="inside__elements wrapper">
 				<div className="inside__elements-col1">

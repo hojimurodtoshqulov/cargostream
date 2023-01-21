@@ -38,7 +38,6 @@
 				font-size: 1.4em;
 				margin: 0 auto;
 				font-family: $font_texts;
-				// text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.545);
 				li {
 					cursor: pointer;
 					border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -66,8 +65,8 @@
 				gap: 0.3rem;
 				&-img {
 					width: 22px;
-					height: 20px;
-					border-radius: 50%;
+					height: 14px;
+					// border-radius: 50%;
 					object-fit: cover;
 					cursor: pointer;
 					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);

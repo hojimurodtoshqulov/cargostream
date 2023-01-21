@@ -19,7 +19,6 @@
 	background: #fff;
 	width: $w_100;
 	overflow: hidden;
-	// position: relative;
 	z-index: 123;
 	.page__title {
 		position: absolute;
@@ -35,18 +34,16 @@
 		font-weight: 500;
 		background: $light;
 		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.698);
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.647);
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 		z-index: 12;
 		border-radius: $br_r_5;
 		text-transform: capitalize;
 	}
-
 	.stages-elements {
 		width: $w_100;
 		padding: 6% 0;
 		border-top: 1px solid rgba(255, 0, 0, 0);
 		border-bottom: 1px solid rgba(255, 0, 0, 0);
-
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
@@ -100,32 +97,20 @@
 					p {
 						color: #666;
 					}
-
 					::placeholder {
 						color: #666;
 					}
 
 					form {
-						.input-name {
-							border-bottom: 1px solid #666;
+						input {
+							border-bottom: 2px solid #ddd;
 						}
-
-						.input-name:focus {
+						input:focus {
 							border-bottom: 2px solid #666;
 						}
-
-						.input-tell {
-							border-bottom: 1px solid #666;
-						}
-
-						.input-tell:focus {
-							border-bottom: 2px solid #666;
-						}
-
 						textarea {
-							border-bottom: 1px solid #666;
+							border-bottom: 2px solid #ddd;
 						}
-
 						textarea:focus {
 							border-bottom: 2px solid #666;
 						}
@@ -139,40 +124,31 @@
 @media (max-width: $xl) {
 	.contact {
 		width: $w_100;
-
 		.stages-elements {
 			padding: 10% 0;
-
 			.wrapper {
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
 				gap: 50px;
-
 				.stages-elements-col1 {
 					width: 80%;
-
 					.stages-elements-col1 {
 						width: 80%;
-
 						.stages {
 							width: $w_100;
 							gap: 2.5em;
-
 							h2 {
 								font-size: 2.2em;
 								text-align: center;
 							}
-
 							[data-aos="fade-right"] {
 								margin-left: 0%;
 							}
-
 							.stages-items {
 								align-items: flex-start;
 								gap: 1.8em;
 								width: 80%;
-
 								.orderNumber {
 									font-size: 5em;
 									display: flex;
@@ -183,13 +159,11 @@
 										color: $reddish;
 									}
 								}
-
 								.texts {
 									.title {
 										font-size: 1.6em;
 										margin: 3% 0;
 									}
-
 									.description {
 										font-size: 1.4em;
 									}
@@ -197,46 +171,36 @@
 							}
 						}
 					}
-
 					.stages-elements-col2 {
 						width: 80%;
-
 						.submit {
 							width: $w_100;
 							flex-direction: column;
 							gap: 4em;
-
 							h2 {
 								font-size: 2.2em;
 							}
-
 							p {
 								font-size: 1.4em;
 								width: 90%;
 							}
-
 							form {
 								gap: 1em 0;
-
 								.input-name {
 									background: none;
 									padding: 1% 2%;
 									width: 48.5%;
 									font-size: 1.2em;
 								}
-
 								.input-tell {
 									width: 48.5%;
 									font-size: 1.2em;
 								}
-
 								textarea {
 									font-size: 1.2em;
 								}
-
 								.input-check-div {
 									width: $w_100;
-
 									label {
 										font-size: 1.4em;
 									}
@@ -249,17 +213,14 @@
 		}
 	}
 }
-
 @media (max-width: $lg) {
 	.contact {
 		.stages-elements {
 			padding: 14% 0 18% 0;
-
 			.wrapper {
 				.stages-elements-col1 {
 					width: 100%;
 				}
-
 				.stages-elements-col2 {
 					width: 100%;
 				}
@@ -273,7 +234,6 @@
 		.page__title {
 			font-size: 1.8em;
 		}
-
 		.stages-elements {
 			.wrapper {
 				.stages-elements-col1 {
@@ -281,26 +241,21 @@
 						h2 {
 							font-size: 2em;
 						}
-
 						[data-aos="fade-right"] {
 							justify-self: flex-start;
 							justify-content: flex-start;
 						}
-
 						.stages-items {
 							gap: 1.8em;
 							width: 95%;
-
 							.orderNumber {
 								font-size: 4.5em;
 							}
-
 							.texts {
 								.title {
 									font-size: 1.5em;
 									margin: 2% 0;
 								}
-
 								.description {
 									font-size: 1.3em;
 								}
@@ -308,44 +263,35 @@
 						}
 					}
 				}
-
 				.stages-elements-col2 {
 					.submit {
 						width: $w_100;
 						flex-direction: column;
 						gap: 2.3em;
-
 						h2 {
 							font-size: 1.8em;
 						}
-
 						p {
 							font-size: 1.4em;
 							width: 90%;
 						}
-
 						form {
 							gap: 1.5em 0;
-
 							.input-name {
 								background: none;
 								padding: 1% 2%;
 								width: 48.5%;
 								font-size: 1.2em;
 							}
-
 							.input-tell {
 								width: 48.5%;
 								font-size: 1.2em;
 							}
-
 							textarea {
 								font-size: 1.2em;
 							}
-
 							.input-check-div {
 								width: $w_100;
-
 								label {
 									font-size: 1.4em;
 								}
@@ -366,7 +312,6 @@
 			width: 50%;
 			left: 25%;
 		}
-
 		.stages-elements {
 			.wrapper {
 				.stages-elements-col1 {
@@ -374,26 +319,20 @@
 						h2 {
 							font-size: 1.6em;
 						}
-
 						width: $w_100;
-
 						.stages-items {
 							gap: 1.4em;
-
 							.orderNumber {
 								font-size: 3.6em;
-
 								.fa-solid {
 									margin-top: 0rem;
 								}
 							}
-
 							.texts {
 								.title {
 									font-size: 1.3em;
 									margin: 1% 0;
 								}
-
 								.description {
 									font-size: 1.1em;
 								}
@@ -401,37 +340,30 @@
 						}
 					}
 				}
-
 				.stages-elements-col2 {
 					.submit {
 						h2 {
 							font-size: 1.6em;
 						}
-
 						p {
 							font-size: 1em;
 							width: 100%;
 						}
-
 						form {
 							gap: 1.5em 0;
-
 							.input-name {
 								background: none;
 								padding: 1% 2%;
 								width: $w_100;
 								font-size: 1.2em;
 							}
-
 							.input-tell {
 								width: $w_100;
 								font-size: 1.2em;
 							}
-
 							textarea {
 								font-size: 1.2em;
 							}
-
 							.input-check-div {
 								label {
 									font-size: 1.2em;
@@ -444,7 +376,6 @@
 		}
 	}
 }
-
 @media (max-width: $xs) {
 	.contact {
 		.page__title {
@@ -461,7 +392,6 @@
 						}
 					}
 				}
-
 				.stages-elements-col2 {
 					.submit {
 						gap: 2em;

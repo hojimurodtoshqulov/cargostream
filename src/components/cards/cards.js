@@ -16,7 +16,7 @@ const Cards = ({ cardsData, id }) => {
 					>
 						<img src={item.img} alt="" />
 						<h3>{item.title}</h3>
-						<p> {item.description} </p>
+						<p> {item.description.slice(0, 100)} ... </p>
 						<span
 							onClick={() => {
 								setIdM(item.key);

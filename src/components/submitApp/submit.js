@@ -39,8 +39,8 @@ const Submit = () => {
 					rows="1"
 					placeholder="коментарии"
 				></textarea>
-			</form>
 			<Button buttonTitle={"Оставить заявку"} />
+			</form>
 		</div>
 	);
 };

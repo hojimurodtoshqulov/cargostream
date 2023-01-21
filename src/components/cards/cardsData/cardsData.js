@@ -7,7 +7,7 @@ export const cardsData = [
 		img: serviceCardImg1,
 		title: "Авиаперевозки",
 		description:
-			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
+			"Мы знаем, как ценно время в авиаперевозках. Благодаря нашему опыту в области глобального воздушного транспорта, мы тщательно планируем ваш груз и следим за процессом обработки. От упаковки и измерения груза до планирования времени в пути и таможенного оформления наша команда экспертов всегда к вашим услугам для полной доставки.",
 		btnTitle: "readmore",
 		link: "/services/airFreight",
 		key: "01",
@@ -16,7 +16,7 @@ export const cardsData = [
 		img: serviceCardImg2,
 		title: "Автоперевозки",
 		description:
-			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
+			"Добросовестность и честность являются нашими основными принципами. Благодаря наших принципов мы создаем креативные решения ориентированный на клиента. Как одна из хорошо зарекомендовавших себя и ведущих компаний в сфере международных перевозок мы доставим ваши грузы быстро и безопасно с нашим молодым и опытным персоналом в направлении Турции, Китая, Казахстан, Россия, Монголия, Пакистан, Иран и Европу.",
 		btnTitle: "readmore",
 		link: "/services/roadFreight",
 		key: "02",
@@ -25,7 +25,7 @@ export const cardsData = [
 		img: serviceCardImg3,
 		title: "Морская Перевозка",
 		description:
-			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
+			"Благодаря тесным партнёрским связам с компанией Safir Forwarding (Турция) мы имеем возможность оказать услуги по морским перевозкам в любую точку мира. Наше партнеры обладая более чем 30-летним глобальным опытом работы, предоставляет услуги в области международных морских перевозок и при необходимости делится своим опытом в области комбинированных перевозок и проектной логистики",
 		btnTitle: "readmore",
 		link: "/services/shipFreight",
 		key: "03",
@@ -34,7 +34,7 @@ export const cardsData = [
 		img: serviceCardImg4,
 		title: "Таможенное Оформления",
 		description:
-			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
+			"Комплексное сопровождение импортных и экспортных операций и осуществление таможенной очистки любых грузов в любом таможенном посту «под ключ». Оформление таможенных деклараций (Импорт, экспорт, реэкспорт, переработка в таможенной территории и др).",
 		btnTitle: "readmore",
 		link: "/services/customs",
 		key: "04",
