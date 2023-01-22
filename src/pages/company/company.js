@@ -8,8 +8,8 @@ import ShowBg from "../../components/showBg/showBg";
 import bgImg from "../../media/company.png";
 import OurCompany from "../../components/info/ourCompany/ourCompany";
 import { OurCompanyData2 } from "../../components/info/ourCompany/ourCompanyData/ourCompanyData2";
-import OurServices from "../../components/info/ourServices/ourServices";
-import { OurServicesData2 } from "../../components/info/ourServices/ourServicesData/ourServicesData2";
+// import OurServices from "../../components/info/ourServices/ourServices";
+// import { OurServicesData2 } from "../../components/info/ourServices/ourServicesData/ourServicesData2";
 // import { useEffect } from "react";
 const Company = () => {
 	return (

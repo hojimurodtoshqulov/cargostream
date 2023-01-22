@@ -17,8 +17,13 @@ import Location from "../../components/location/location";
 import Footer from "../../components/footer/footer";
 import Carousel from "../../components/carousel/carousel";
 import { carouselData } from "../../components/carousel/carouselData/carouselData";
-
-const Home = () => {
+import { withNamespaces } from "react-i18next";
+import i18n from "../../locales/i18n";
+// import { ReactDOM } from "react-dom/client";
+const Home = ({ t }) => {
+	const changeLanguage = (lng) => {
+		i18n.changeLanguage(lng);
+	};
 	return (
 		<div className="main">
 			<Nav />
@@ -28,9 +33,10 @@ const Home = () => {
 			<div className="slider_div">
 				<ImageSlider slides={SliderData} />
 			</div>
-			{/* <div style={{border:"2px solid red", height:"200px"}}>
-			</div> */}
 			<div className="infoDiv">
+				<button onClick={() => changeLanguage("de")}>de</button>
+				<button onClick={() => changeLanguage("en")}>en</button>
+				{/* <h1>{t("title")}</h1> */}
 				<OurCompany OurCompanyData={OurCompanyData} />
 				<OurServices OurServicesData={OurServicesData} />
 			</div>
@@ -62,3 +68,4 @@ const Home = () => {
 	);
 };
 export { Home };
+export default withNamespaces();

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import navLogo from "../../media/logo.png";
-// import CallLink from "./callLinks/callLinks";
 import engLogo from "../../media/UK-Union-Flag.png";
 import ruLogo from "../../media/russianFlag.png";
 import "./nav.scss";
@@ -13,7 +12,6 @@ const Nav = () => {
 	const [navTextShadow, setnavTextShadow] = useState(
 		"1px 1px 10px rgba(255, 255, 255, 0.545)"
 	);
-	// const [navLinks, setnavLinks] = useState("block");
 	const listenScrollEvent = () => {
 		window.scrollY > 150
 			? setnavColorBg("#181a1be5")
@@ -42,29 +40,10 @@ const Nav = () => {
 		>
 			<img className="nav__logo" src={navLogo} alt="nav logo" />
 			<div className="nav__elements">
-				{/* <h2
-					className="nav__elements-title"
-					style={{
-						color: navColor,
-						display: navElements,
-					}}
-				>
-					таможня и логистика в узбекистане
-				</h2>
-				<div
-					className="nav__elements-callsDiv"
-					style={{
-						color: navColor,
-						display: navElements,
-					}}
-				>
-					<CallLink />
-				</div> */}
 				<div
 					className="nav__elements-linksDiv"
 					style={{
 						color: navColor,
-						// display: navLinks,
 					}}
 				>
 					<ul

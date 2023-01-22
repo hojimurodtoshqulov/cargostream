@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
 import i18next from "i18next";
+import './locales/i18n';
 i18next.init({
 	lng: "en", // if you're using a language detector, do not define the lng option
 	debug: true,

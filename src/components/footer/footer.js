@@ -1,7 +1,6 @@
 import "./footer.scss";
 import footerLogo from "../../media/logo.png";
 import CallLink from "../navbar/callLinks/callLinks";
-import MailLang from "../navbar/mail-lang/mail-lang";
 
 const Footer = () => {
 	return (

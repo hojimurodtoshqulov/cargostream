@@ -1,7 +1,6 @@
 import React from "react";
 import "../info.scss";
 import Button from "../../button/button";
-
 import { Link } from "react-router-dom";
 const OurCompany = ({ OurCompanyData }) => {
 	return (
