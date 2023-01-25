@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "../../scss/main.scss";
 import "./news.scss";
 import { Nav } from "../../components/navbar/nav";
@@ -10,7 +10,13 @@ import Slider from "react-slick";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import { newsData } from "./newsData/newsData";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 const News = () => {
+	const { t } = useTranslation();
+	const handleClick = (e) => {
+		i18next.changeLanguage(e.target.value);
+	};
 	const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	const [num, setNum] = useState(4);
 	const listenScrollEvent = () => {
@@ -41,32 +47,34 @@ const News = () => {
 	};
 
 	return (
-		<div className="main news">
-			<Nav />
-			<input type="checkbox" id="navLinks__menu" />
-			<NavbarLinks />
-			<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
-			<ShowBg bgImage={bgImg} title={"News"} />
-			<h2 className="page__title">Новости</h2>
-			<div
-				className="carousel wrapper"
-				data-aos="zoom-in-up"
-				data-aos-duration="1000"
-			>
-				<Slider {...settings}>
-					{newsData.map((data, index) => (
-						<div className="card" key={data.key} data-aos={data.aos}>
-							<div className="card__elements">
-								<img src={data.img} alt="" />
-								<h3>{data.title}</h3>
-								<p> {data.description} </p>
+		<Suspense fallback="loading">
+			<div className="main news">
+				<Nav onClick={(e) => handleClick(e)}/>
+				<input type="checkbox" id="navLinks__menu" />
+				<NavbarLinks />
+				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
+				<ShowBg bgImage={bgImg} title={"News"} />
+				<h2 className="page__title">{t("news")}</h2>
+				<div
+					className="carousel wrapper"
+					data-aos="zoom-in-up"
+					data-aos-duration="1000"
+				>
+					<Slider {...settings}>
+						{newsData.map((data) => (
+							<div className="card" key={data.key} data-aos={data.aos}>
+								<div className="card__elements">
+									<img src={data.img} alt="" />
+									<h3>{data.title}</h3>
+									<p> {data.description} </p>
+								</div>
 							</div>
-						</div>
-					))}
-				</Slider>
+						))}
+					</Slider>
+				</div>
+				<Footer />
 			</div>
-			<Footer />
-		</div>
+		</Suspense>
 	);
 };
 export { News };

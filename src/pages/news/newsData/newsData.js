@@ -18,7 +18,7 @@ export const newsData = [
 		img: serviceCardImg2,
 		title: "Road freight",
 		description:
-			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
+			"We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers.",
 		btnTitle: "readmore",
 		aos: "fade-left",
 		key: "02",
@@ -34,16 +34,16 @@ export const newsData = [
 	},
 	{
 		img: serviceCardImg4,
-		title: "Air freight",
+		title: "Train freight",
 		description:
-			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
+			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive. We combine transport execution with transport management services to meet all your needs on the road. Through our global network of control towers and",
 		btnTitle: "readmore",
 		aos: "fade-left",
 		key: "04",
 	},
 	{
 		img: serviceCardImg5,
-		title: "Train freight",
+		title: "Rail freight",
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",
@@ -52,7 +52,7 @@ export const newsData = [
 	},
 	{
 		img: serviceCardImg6,
-		title: "Air freight",
+		title: "About cargo",
 		description:
 			"As one of the leading independent airfreight company, we provide more flexibility, choice worldwide by working in partnership with an extensive",
 		btnTitle: "readmore",

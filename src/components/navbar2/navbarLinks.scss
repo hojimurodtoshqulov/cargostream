@@ -104,11 +104,19 @@
 				}
 				&__language {
 					&-img {
-						margin-right: 0.3rem;
-						width: 20px;
-						height: 19px;
-						border-radius: 50%;
+						margin-right: 0.5rem;
+						width: 22px;
+						height: 14px;
 						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						border: none;
+					}
+					.eng {
+						background-image: url("../../media/UK-Union-Flag.png");
+						background-size: cover;
+					}
+					.rus {
+						background-image: url("../../media/russianFlag.png");
+						background-size: cover;
 					}
 				}
 			}
@@ -164,11 +172,8 @@
 				}
 				&__language {
 					&-img {
-						margin-right: 0.3rem;
 						width: 20px;
-						height: 19px;
-						border-radius: 50%;
-						box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+						height: 13px;
 					}
 				}
 			}

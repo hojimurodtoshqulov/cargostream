@@ -1,9 +1,34 @@
 import React from "react";
 import "./stages.scss";
+import { useTranslation } from "react-i18next";
 const Stages = ({ stagesData }) => {
+const { t } = useTranslation();
+const StagesData = [
+	{
+		aos: "fade-left",
+		orderNumber: "01",
+		title: t("stages1Title"),
+		description: t("stages1Description"),
+		key: 0,
+	},
+	{
+		aos: "fade-right",
+		orderNumber: "02",
+		title: t("stages2Title"),
+		description: t("stages2Description"),
+		key: 1,
+	},
+	{
+		aos: "fade-left",
+		orderNumber: "03",
+		title: t("stages3Title"),
+		description: t("stages3Description"),
+		key: 2,
+	},
+];
 	return (
 		<div className="stages">
-			<h2>Этапы работы</h2>
+			<h2>{t("stagesOfWorkTitle")}</h2>
 			{stagesData.map((item, index) => (
 				<div
 					className="stages-items"

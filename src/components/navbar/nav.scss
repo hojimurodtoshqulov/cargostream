@@ -66,10 +66,18 @@
 				&-img {
 					width: 22px;
 					height: 14px;
-					// border-radius: 50%;
 					object-fit: cover;
 					cursor: pointer;
 					box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+					border: none;
+				}
+				.eng {
+					background-image: url("../../media/UK-Union-Flag.png");
+					background-size: cover;
+				}
+				.rus {
+					background-image: url("../../media/russianFlag.png");
+					background-size: cover;
 				}
 			}
 		}
@@ -164,7 +172,7 @@
 					gap: 0.3rem;
 					&-img {
 						width: 18px;
-						height: 17px;
+						height: 12px;
 					}
 				}
 			}
@@ -201,8 +209,8 @@
 				&-language {
 					gap: 0.3rem;
 					&-img {
-						width: 14px;
-						height: 13px;
+						width: 17px;
+						height: 10px;
 					}
 				}
 			}

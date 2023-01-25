@@ -82,7 +82,7 @@
 			&-elements {
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
 				gap: 1rem;
 
 				img {
@@ -96,6 +96,7 @@
 					font-family: $font_texts;
 					color: #666;
 					line-height: 1.5rem;
+					text-align: justify;
 				}
 			}
 		}
@@ -323,6 +324,7 @@
 				height: 290px;
 				h3 {
 					font-size: 1rem;
+					text-transform: uppercase;
 				}
 				&-categories {
 					height: 115px;

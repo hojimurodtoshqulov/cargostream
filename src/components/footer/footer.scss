@@ -42,19 +42,25 @@ footer {
 		align-items: center;
 		justify-content: center;
 		gap: 0.5em;
-		&-mail {
-		}
 		&__language {
 			align-self: flex-end;
 			display: flex;
-			gap: 0.3rem;
+			gap: 0.5rem;
 			&-img {
-				width: 22px;
-				height: 20px;
-				border-radius: 50%;
+				width: 27px;
+				height: 17px;
 				object-fit: cover;
-				cursor: pointer;
 				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.503);
+				cursor: pointer;
+				border: none;
+			}
+			.eng {
+				background-image: url("../../media/UK-Union-Flag.png");
+				background-size: cover;
+			}
+			.rus {
+				background-image: url("../../media/russianFlag.png");
+				background-size: cover;
 			}
 		}
 	}
@@ -86,7 +92,7 @@ footer {
 			&__language {
 				&-img {
 					width: 32px;
-					height: 30px;
+					height: 20px;
 				}
 			}
 		}
@@ -109,7 +115,7 @@ footer {
 			&__language {
 				&-img {
 					width: 27px;
-					height: 25px;
+					height: 17px;
 				}
 			}
 		}
@@ -140,7 +146,7 @@ footer {
 			&__language {
 				&-img {
 					width: 22px;
-					height: 20px;
+					height: 14px;
 				}
 			}
 		}
@@ -170,8 +176,8 @@ footer {
 			}
 			&__language {
 				&-img {
-					width: 18px;
-					height: 17px;
+					width: 20px;
+					height: 13px;
 				}
 			}
 		}
@@ -204,8 +210,8 @@ footer {
 			}
 			&__language {
 				&-img {
-					width: 16px;
-					height: 15px;
+					width: 18px;
+					height: 12px;
 				}
 			}
 		}
@@ -241,8 +247,8 @@ footer {
 			&__language {
 				align-self: flex-start;
 				&-img {
-					width: 15px;
-					height: 14px;
+					width: 17px;
+					height: 12px;
 				}
 			}
 		}

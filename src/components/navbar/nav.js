@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { Suspense } from "react";
+import { useState, useEffect } from "react";
 import navLogo from "../../media/logo.png";
-import engLogo from "../../media/UK-Union-Flag.png";
-import ruLogo from "../../media/russianFlag.png";
 import "./nav.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-const Nav = () => {
+const Nav = ({onClick}) => {
 	const [navSize, setnavSize] = useState("100px");
 	const [navColorBg, setnavColorBg] = useState("transparent");
 	const [navColor, setnavColor] = useState("#000");
@@ -22,6 +22,7 @@ const Nav = () => {
 			? setnavTextShadow("none")
 			: setnavTextShadow("1px 1px 10px rgba(255, 255, 255, 0.545)");
 	};
+	const { t } = useTranslation();
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);
 		return () => {
@@ -30,103 +31,107 @@ const Nav = () => {
 	}, []);
 
 	return (
-		<nav
-			className="nav"
-			style={{
-				backgroundColor: navColorBg,
-				height: navSize,
-				transition: "all 0.8s",
-			}}
-		>
-			<img className="nav__logo" src={navLogo} alt="nav logo" />
-			<div className="nav__elements">
-				<div
-					className="nav__elements-linksDiv"
-					style={{
-						color: navColor,
-					}}
-				>
-					<ul
-						className="nav__elements-linksDiv-ul"
-						style={{
-							textShadow: navTextShadow,
-						}}
-					>
-						<li>
-							<Link to="/">Главная</Link>
-						</li>
-						<li>
-							<Link to="/company">О компани</Link>
-						</li>
-						<li>
-							<Link to="/services">Услуги</Link>
-						</li>
-						<li>
-							<Link to="/news">Новости</Link>
-						</li>
-						<li>
-							<Link to="/contact">Контакт</Link>
-						</li>
-					</ul>
-				</div>
-				<div className="nav__elements-others">
-					<a
-						className="nav__elements-others-mail"
-						href="mail:cargostreamuz@gmail.com"
+		<Suspense fallback="loading">
+			<nav
+				className="nav"
+				style={{
+					backgroundColor: navColorBg,
+					height: navSize,
+					transition: "all 0.8s",
+				}}
+			>
+				<img className="nav__logo" src={navLogo} alt="nav logo" />
+				<div className="nav__elements">
+					<div
+						className="nav__elements-linksDiv"
 						style={{
 							color: navColor,
 						}}
 					>
-						<i className="fa-solid fa-envelope"></i> cargostreamuz@gmail.com
-					</a>
-					<div className="nav__elements-others-language">
-						<img
-							className="nav__elements-others-language-img"
-							src={engLogo}
-							alt="eng logo"
-						/>
-						<img
-							className="nav__elements-others-language-img"
-							src={ruLogo}
-							alt="ru logo"
-						/>
-					</div>
-				</div>
-			</div>
-			<div className="nav__mobile">
-				<div className="nav__mobile-elements">
-					<p>
-						<a
-							href="tel:+998 93 543 38 11"
+						<ul
+							className="nav__elements-linksDiv-ul"
 							style={{
-								color: navColor,
+								textShadow: navTextShadow,
 							}}
 						>
-							<i className="fa-solid fa-phone"></i>
-						</a>
-					</p>
-					<p>
+							<li>
+								<Link to="/">{t("home")}</Link>
+							</li>
+							<li>
+								<Link to="/company">{t("company")}</Link>
+							</li>
+							<li>
+								<Link to="/services">{t("service")}</Link>
+							</li>
+							<li>
+								<Link to="/news">{t("news")}</Link>
+							</li>
+							<li>
+								<Link to="/contact">{t("contact")}</Link>
+							</li>
+						</ul>
+					</div>
+					<div className="nav__elements-others">
 						<a
+							className="nav__elements-others-mail"
 							href="mail:cargostreamuz@gmail.com"
 							style={{
 								color: navColor,
 							}}
 						>
-							<i className="fa-solid fa-envelope"></i>
+							<i className="fa-solid fa-envelope"></i> cargostreamuz@gmail.com
 						</a>
-					</p>
-					<p
-						style={{
-							color: navColor,
-						}}
-					>
-						<label htmlFor="navLinks__menu">
-							<i class="fa-solid fa-bars-staggered"></i>
-						</label>
-					</p>
+						<div className="nav__elements-others-language">
+							<button
+								className="nav__elements-others-language-img eng"
+								value={"en"}
+								onClick={onClick}
+								type="btn"
+							></button>
+							<button
+								className="nav__elements-others-language-img rus"
+								value={"ru"}
+								onClick={onClick}
+								type="btn"
+							></button>
+						</div>
+					</div>
 				</div>
-			</div>
-		</nav>
+				<div className="nav__mobile">
+					<div className="nav__mobile-elements">
+						<p>
+							<a
+								href="tel:+998 93 543 38 11"
+								style={{
+									color: navColor,
+								}}
+							>
+								<i className="fa-solid fa-phone"></i>
+							</a>
+						</p>
+						<p>
+							<a
+								href="mail:cargostreamuz@gmail.com"
+								style={{
+									color: navColor,
+								}}
+							>
+								<i className="fa-solid fa-envelope"></i>
+							</a>
+						</p>
+						<p
+							style={{
+								color: navColor,
+							}}
+						>
+							<label htmlFor="navLinks__menu">
+								<i class="fa-solid fa-bars-staggered"></i>
+							</label>
+						</p>
+					</div>
+				</div>
+			</nav>
+		</Suspense>
 	);
 };
 export { Nav };

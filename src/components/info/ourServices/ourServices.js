@@ -2,7 +2,19 @@ import React from "react";
 import "../info.scss";
 import Button from "../../button/button";
 import { Link } from "react-router-dom";
-const OurServices = ({ OurServicesData }) => {
+import { useTranslation } from "react-i18next";
+import img from "../../../media/transportation-and-logistics-of-container-3f334ac6.jpeg"
+
+const OurServices = ({ }) => {
+	const { t } = useTranslation();
+	const OurServicesData = [
+		{
+			image: img,
+			title: t("infoService"),
+			description: t("infoServiceDescription"),
+			buttonTitle: t("infoBtn"),
+		},
+	];
 	return (
 		<div className="info" data-aos="zoom-in-up" data-aos-duration="2000">
 			<div className="wrapper">

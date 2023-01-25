@@ -2,8 +2,9 @@ import Slider from "react-slick";
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 import "./carousel.scss";
-
+import { useTranslation } from "react-i18next";
 export default function Carousel({ carouselData }) {
+	const { t } = useTranslation();
 	const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	const [num, setNum] = useState(5);
 	const listenScrollEvent = () => {
@@ -42,10 +43,15 @@ export default function Carousel({ carouselData }) {
 			data-aos-duration="2000"
 			className="carousel wrapper"
 		>
-			<h2>Партнеры</h2>
+			<h2>{t("partners")}</h2>
 			<Slider {...settings}>
 				{carouselData.map((item, index) => (
-					<div className="carousel__elements" key={index} data-aos={item.aos} data-aos-duration="2000">
+					<div
+						className="carousel__elements"
+						key={index}
+						data-aos={item.aos}
+						data-aos-duration="2000"
+					>
 						<a href={item.url}>
 							<img src={item.image} alt="partner img" />
 						</a>

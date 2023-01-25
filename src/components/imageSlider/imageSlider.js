@@ -5,7 +5,9 @@ import "./imageSlider.scss";
 import Button from "../button/button";
 import { useEffect } from "react";
 import Modal from "../modal/modal";
+import { useTranslation } from "react-i18next";
 const ImageSlider = ({ slides }) => {
+	const { t } = useTranslation();
 	const [current, setCurrent] = useState(0);
 	let [num, setNum] = useState(0);
 	const [openModal, setOpenModal] = useState(false);
@@ -50,14 +52,14 @@ const ImageSlider = ({ slides }) => {
 								<>
 									<img src={slide.image} alt="slider" className="image" />
 									<div className="slide-elements">
-										<h1 className="title">{slide.title}</h1>
-										<p className="description">{slide.description}</p>
+										<h1 className="title">{t("showTitle")}</h1>
+										<p className="description">{t("showDescription")}</p>
 										<a
 											onClick={() => {
 												setOpenModal(true);
 											}}
 										>
-											<Button buttonTitle={slide.buttonTitle} />
+											<Button buttonTitle={t("showBtn")} />
 										</a>
 									</div>
 									<div className="left-arrow-div" onClick={prevSlide}></div>
@@ -68,10 +70,7 @@ const ImageSlider = ({ slides }) => {
 					);
 				})}
 			</div>
-			<Modal
-				open={openModal}
-				onClose={() => setOpenModal(false)}
-			/>
+			<Modal open={openModal} onClose={() => setOpenModal(false)} />
 		</>
 	);
 };
