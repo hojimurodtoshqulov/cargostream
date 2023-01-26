@@ -5,7 +5,7 @@ import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
-import bgImg from "../../media/company.png";
+import bgImg from "../../media/auto.jpg";
 // import { cardsData } from "../../components/cards/cardsData/cardsData";
 import roadFreightImg from "../../media/news.jpg";
 import InsideCategories from "./insideCategories/insideCategories";

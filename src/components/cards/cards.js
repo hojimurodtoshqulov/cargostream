@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./cards.scss";
 import Button from "../button/button";
 import { Link } from "react-router-dom";
-import serviceCardImg1 from "../../media/transportation-and-logistics-of-container-3f334ac6.jpeg";
+import serviceCardImg1 from "../../media/Air-Freight_.jpg";
 import serviceCardImg2 from "../../media/news.jpg";
 import serviceCardImg3 from "../../media/shipping-rates-are-finally-falling-1428282157-standard-1536x1536.jpg";
 import serviceCardImg4 from "../../media/customs-clearance.png";
@@ -62,7 +62,7 @@ const Cards = ({ id }) => {
 								setIdM(item.key);
 							}}
 						>
-							<Link to={item.link}>
+							<Link className="link" to={item.link}>
 								<Button buttonTitle={item.btnTitle} />
 							</Link>
 							{idM ? console.log(idM) : ""}

@@ -5,7 +5,7 @@ import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
-import bgImg from "../../media/company.png";
+import bgImg from "../../media/ship.jpg";
 // import { cardsData } from "../../components/cards/cardsData/cardsData";
 import shipFreightImg from "../../media/shipping-rates-are-finally-falling-1428282157-standard-1536x1536.jpg";
 import InsideCategories from "./insideCategories/insideCategories";

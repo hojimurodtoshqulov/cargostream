@@ -1,7 +1,7 @@
-import carouselImg1 from "../../../media/barrett-ward-5WQJ_ejZ7y8-unsplash.jpg";
-import carouselImgTwo from "../../../media/slideImg2.png";
+import carouselImg1 from "../../../media/warehouse-with-boxes_container_16617.jpg";
+import carouselImg2 from "../../../media/b3.jpg";
 import carouselImg3 from "../../../media/infoBg.jpg";
-import carouselImg4 from "../../../media/transportation-and-logistics-of-container-3f334ac6.jpeg";
+import carouselImg4 from "../../../media/Logistics-Company-scaled.jpg";
 
 export const SliderData = [
 	{
@@ -26,7 +26,7 @@ export const SliderData = [
 		key: 2,
 	},
 	{
-		image:carouselImgTwo,
+		image: carouselImg2,
 		title: "Экспорт и Импорт",
 		description: "Сколько будет растаможа вашего товара?",
 		buttonTitle: "оставьте заявку",

@@ -5,7 +5,7 @@ import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
-import bgImg from "../../media/company.png";
+import bgImg from "../../media/companyBG.jpg";
 import OurCompany from "../../components/info/ourCompany/ourCompany";
 // import { OurCompanyData2 } from "../../components/info/ourCompany/ourCompanyData/ourCompanyData2";
 import i18next from "i18next";

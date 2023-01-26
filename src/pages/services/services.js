@@ -5,9 +5,8 @@ import { Nav } from "../../components/navbar/nav";
 import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
-import bgImg from "../../media/news12.jpg";
+import bgImg from "../../media/transport-and-logistics-hero-new.jpg";
 import { Cards } from "../../components/cards/cards";
-// import { cardsData } from "../../components/cards/cardsData/cardsData";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 const Services = () => {

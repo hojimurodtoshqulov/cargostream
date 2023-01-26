@@ -44,8 +44,16 @@
 			line-height: 1.5rem;
 			color: #666;
 		}
-		button {
-			padding: 0% 10%;
+		.link {
+			display: block;
+			// border: 2px solid blue;
+			// width: 100%;
+			button {
+				// border: 2px solid blue;
+
+				padding: 0% 1%;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -53,13 +61,13 @@
 @media (max-width: $xl) {
 	.cards {
 		padding: 10% 0;
-		row-gap: 2.5rem;  
+		row-gap: 2.5rem;
 		.card {
-			width: 48%;  
-			img {		
-				height: 240px;  
+			width: 48%;
+			img {
+				height: 240px;
 			}
-			
+
 			p {
 				line-height: 1.5rem;
 			}
@@ -74,13 +82,13 @@
 @media (max-width: $lg) {
 	.cards {
 		padding: 10% 0;
-		row-gap: 2rem;  
+		row-gap: 2rem;
 		.card {
-			width: 48%;  
-			img {		
-				height: 220px;  
+			width: 48%;
+			img {
+				height: 220px;
 			}
-			
+
 			p {
 				line-height: 1.4rem;
 				width: 85%;
@@ -96,15 +104,15 @@
 @media (max-width: $md) {
 	.cards {
 		padding: 10% 0;
-		row-gap: 2.5rem;  
+		row-gap: 2.5rem;
 		justify-content: center;
 		.card {
-			width: 75%; 
-			padding: 0 0 5% 0; 
-			img {		
-				height: 230px;  
+			width: 75%;
+			padding: 0 0 5% 0;
+			img {
+				height: 230px;
 			}
-			
+
 			p {
 				line-height: 1.3rem;
 				width: 80%;
@@ -119,22 +127,22 @@
 
 @media (max-width: $sm) {
 	.cards {
-		row-gap: 2.5rem;  
+		row-gap: 2.5rem;
 		.card {
-			width: 100%; 
-			padding: 0 0 5% 0; 
-			img {		
-				height: 210px;  
+			width: 100%;
+			padding: 0 0 5% 0;
+			img {
+				height: 210px;
 			}
-			
+
 			p {
 				line-height: 1.3rem;
 				width: 90%;
-				font-size: .8rem;
+				font-size: 0.8rem;
 			}
 			button {
 				padding: 0% 7%;
-				font-size: .9rem;
+				font-size: 0.9rem;
 			}
 		}
 	}
@@ -142,21 +150,21 @@
 
 @media (max-width: $xs) {
 	.cards {
-		row-gap: 2rem;  
+		row-gap: 2rem;
 		.card {
-			gap: .8em; 
-			img {		
-				height: 180px;  
+			gap: 0.8em;
+			img {
+				height: 180px;
 			}
-			
+
 			p {
 				line-height: 1.1rem;
 				width: 95%;
-				font-size: .8rem;
+				font-size: 0.8rem;
 			}
 			button {
 				padding: 0% 6%;
-				font-size: .8rem;
+				font-size: 0.8rem;
 			}
 		}
 	}

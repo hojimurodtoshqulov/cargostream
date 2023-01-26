@@ -8,7 +8,6 @@ import { SliderData } from "../../components/imageSlider/sliderData/sliderData";
 import OurCompany from "../../components/info/ourCompany/ourCompany";
 import OurServices from "../../components/info/ourServices/ourServices";
 import Stages from "../../components/stages/stages";
-// import { StagesData } from "../../components/stages/stagesData/stagesData";
 import Submit from "../../components/submitApp/submit";
 import "aos/dist/aos.css";
 import Location from "../../components/location/location";
@@ -17,7 +16,7 @@ import Carousel from "../../components/carousel/carousel";
 import { carouselData } from "../../components/carousel/carouselData/carouselData";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-
+import imgCompany from "../../media/Logistics-Companies.jpg"
 const Home = () => {
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
@@ -25,8 +24,7 @@ const Home = () => {
 	const { t } = useTranslation();
 	const OurCompanyData = [
 		{
-			image:
-				"https://skladi.uz/storage/app/media/cropped-images/transportnaya-logistika-0-0-0-0-1663569355.jpg",
+			image: imgCompany,
 			title: t("infoCompany"),
 			description:t("infoCompanyDescription"),
 			buttonTitle: t("infoBtn"),
