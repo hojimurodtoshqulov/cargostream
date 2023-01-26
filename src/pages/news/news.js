@@ -75,7 +75,7 @@ const News = () => {
 	const windowSize = useRef([window.innerWidth, window.innerHeight]);
 	const [num, setNum] = useState(4);
 	const listenScrollEvent = () => {
-		if (windowSize.current[0] < 375) {
+		if (windowSize.current[0] < 500) {
 			setNum(2);
 		} else if (windowSize.current[0] < 768) {
 			setNum(3);
@@ -100,9 +100,8 @@ const News = () => {
 		autoplaySpeed: 2000,
 		rtl: true,
 	};
-
 	return (
-		<Suspense fallback="loading">
+		<Suspense fallback="loading...">
 			<div className="main news">
 				<Nav onClick={(e) => handleClick(e)} />
 				<input type="checkbox" id="navLinks__menu" />

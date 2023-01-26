@@ -10,7 +10,7 @@
 	.page__title {
 		position: absolute;
 		left: 37%;
-		top: 32vh;
+		top: 36vh;
 		overflow: hidden;
 		padding: 1% 0 2% 0;
 		font-family: $font_titles;
@@ -77,53 +77,6 @@
 			}
 		}
 	}
-	// .wrapper {
-	// 	.cards {
-	// 		padding: 10% 0;
-	// 		display: flex;
-	// 		justify-content: space-between;
-	// 		align-items: start;
-	// 		flex-wrap: wrap;
-	// 		.card {
-	// 			width: 23%;
-	// 			display: flex;
-	// 			flex-direction: column;
-	// 			align-items: center;
-	// 			justify-content: center;
-	// 			gap: 1em;
-	// 			text-align: center;
-	// 			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
-	// 			border-radius: $br_r_10;
-	// 			overflow: hidden;
-	// 			padding: 0 0 3% 0;
-	// 			&:hover {
-	// 				box-shadow: 0 7px 20px rgba(0, 0, 0, 0.555);
-	// 				transform: scale(1.02);
-	// 			}
-	// 			img {
-	// 				width: 100%;
-	// 				height: 250px;
-	// 				object-fit: cover;
-	// 				border-radius: 10px 10px 0px 0px;
-	// 				&:hover {
-	// 					transform: scale(1.02);
-	// 				}
-	// 			}
-	// 			h3 {
-	// 				font-family: $font_titles;
-	// 			}
-	// 			p {
-	// 				width: 85%;
-	// 				font-family: $font_texts;
-	// 				line-height: 1.5rem;
-	// 				color: $grey;
-	// 			}
-	// 			button {
-	// 				padding: 0% 10%;
-	// 			}
-	// 		}
-	// 	}
-	// }
 }
 
 @media (max-width: $xl) {
@@ -151,7 +104,7 @@
 						height: 240px;
 					}
 					p {
-						width: 85%;
+						width: 88%;
 					}
 					button {
 						padding: 0% 10%;
@@ -186,7 +139,7 @@
 						height: 230px;
 					}
 					p {
-						width: 85%;
+						width: 90%;
 					}
 					button {
 						padding: 0% 10%;
@@ -221,7 +174,7 @@
 					}
 					p {
 						line-height: 1.4;
-						width: 80%;
+						width: 90%;
 					}
 					button {
 						padding: 0% 10%;
@@ -250,7 +203,11 @@
 						height: 220px;
 					}
 					p {
-						width: 80%;
+						width: 95%;
+						text-align: justify;
+						font-size: 0.6rem;
+						line-height: 1.1rem;
+color: aqua;
 					}
 					button {
 						padding: 0% 10%;

@@ -83,7 +83,6 @@
 
 		.input-check-div {
 			width: 100%;
-
 			label {
 				margin-left: 2%;
 				font-size: 1.1em;
@@ -94,6 +93,7 @@
 
 	button {
 		align-self: flex-start;
+		order: 5;
 	}
 }
 

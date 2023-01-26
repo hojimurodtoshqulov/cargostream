@@ -4,7 +4,7 @@ import NavbarLinks from "../../components/navbar2/NavbarLinks";
 import "../../scss/main.scss";
 import Footer from "../../components/footer/footer";
 import ShowBg from "../../components/showBg/showBg";
-import bgImg from "../../media/contact2.jpg";
+import bgImg from "../../media/contact-us.jpg";
 import Stages from "../../components/stages/stages";
 import Submit from "../../components/submitApp/submit";
 import Aos from "aos";
