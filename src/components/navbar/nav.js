@@ -54,19 +54,19 @@ const Nav = ({onClick}) => {
 								textShadow: navTextShadow,
 							}}
 						>
-							<li>
+							<li className="nav__elements-linksDiv-ul-home">
 								<Link to="/">{t("home")}</Link>
 							</li>
-							<li>
+							<li className="nav__elements-linksDiv-ul-company">
 								<Link to="/company">{t("company")}</Link>
 							</li>
-							<li>
+							<li className="nav__elements-linksDiv-ul-services">
 								<Link to="/services">{t("service")}</Link>
 							</li>
-							<li>
+							<li className="nav__elements-linksDiv-ul-news">
 								<Link to="/news">{t("news")}</Link>
 							</li>
-							<li>
+							<li className="nav__elements-linksDiv-ul-contact">
 								<Link to="/contact">{t("contact")}</Link>
 							</li>
 						</ul>

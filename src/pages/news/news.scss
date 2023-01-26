@@ -7,6 +7,18 @@
 .news {
 	background: #fff;
 	margin-top: 40vh;
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-news {
+						color: $denger;
+						border-bottom: 2px solid $reddish;
+					}
+				}
+			}
+		}
+	}
 	.page__title {
 		position: absolute;
 		left: 37%;

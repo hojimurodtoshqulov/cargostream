@@ -30,15 +30,17 @@
 		background: rgba(0, 0, 0, 0.749);
 		transition: 0.5s;
 	}
-}
 .slider_div {
 	background: $light;
 	width: 100%;
 }
+
 .infoDiv {
 	background: $light;
 	padding: 5% 0 10% 0;
 }
+}
+
 .stages-elements-bg {
 	width: $w_100;
 	height: 100vh;
@@ -69,6 +71,20 @@
 }
 .partners-location {
 	background: $light;
+}
+.home{
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-home {
+						color: $denger;
+						border-bottom: 2px solid $reddish;
+					}
+				}
+			}
+		}
+	}
 }
 @media (max-width: $xl) {
 	.stages-elements {

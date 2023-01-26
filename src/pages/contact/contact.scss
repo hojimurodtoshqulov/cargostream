@@ -20,6 +20,18 @@
 	width: $w_100;
 	overflow: hidden;
 	z-index: 123;
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-contact {
+						color: $denger;
+						border-bottom: 2px solid $reddish;
+					}
+				}
+			}
+		}
+	}
 	.page__title {
 		position: absolute;
 		left: 37%;

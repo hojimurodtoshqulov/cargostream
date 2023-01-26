@@ -55,7 +55,7 @@ const Home = () => {
 	];
 	return (
 		<Suspense fallback="loading">
-			<div className="main">
+			<div className="main home">
 				<Nav onClick={(e) => handleClick(e)} />
 				<input type="checkbox" id="navLinks__menu" />
 				<NavbarLinks />

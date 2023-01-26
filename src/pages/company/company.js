@@ -10,6 +10,7 @@ import OurCompany from "../../components/info/ourCompany/ourCompany";
 // import { OurCompanyData2 } from "../../components/info/ourCompany/ourCompanyData/ourCompanyData2";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import img1 from "../../media/tong-quan-ve-logistics.jpg";
 import img2 from "../../media/transportation-and-logistics-of-container-3f334ac6.jpeg";
 
 const Company = () => {
@@ -19,8 +20,7 @@ const Company = () => {
 	};
 	const OurCompanyData2 = [
 		{
-			image:
-				"https://skladi.uz/storage/app/media/cropped-images/transportnaya-logistika-0-0-0-0-1663569355.jpg",
+			image: img1,
 			description: t("aboutCompanyDescription1"),
 		},
 		{

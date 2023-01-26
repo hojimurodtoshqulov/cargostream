@@ -7,7 +7,19 @@
 .company {
 	background: #fff;
 	margin-top: 40vh;
-	.page__title { 
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-company {
+						color: $denger;
+						border-bottom: 2px solid $reddish;
+					}
+				}
+			}
+		}
+	}
+	.page__title {
 		position: absolute;
 		left: 37%;
 		top: 36vh;
@@ -29,13 +41,13 @@
 	.infoDiv {
 		.info {
 			margin: 0;
-			padding: 5% 0;
+			padding: 5% 0 0;
 			.wrapper {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
-				gap: 4em;
+				gap: 3rem;
 				& :nth-child(2) {
 					.info-img-div {
 						order: 2;
@@ -94,12 +106,12 @@
 		.page__title {
 			left: 35%;
 			top: 32vh;
-			padding: 1% 0 2% 0;
+			padding: 1% 0 2%;
 			font-size: 2.9em;
 			width: 30%;
 		}
 		.infoDiv {
-			padding: 10% 0 5% 0;
+			padding: 10% 0 5%;
 			.info {
 				padding: 2% 0;
 				.wrapper {
@@ -146,6 +158,15 @@
 			.info {
 				padding: 2% 0;
 				.wrapper {
+					gap: 0;
+					& :nth-child(2) {
+						.info-img-div {
+							order: 1;
+						}
+						.info-titles-div {
+							order: 2;
+						}
+					}
 					.info-elements {
 						.info-img-div {
 							width: $w_100;
@@ -156,12 +177,10 @@
 						}
 						.info-titles-div {
 							width: $w_100;
+						p {
+							font-size: 1.1em;
+							line-height: 23px;
 						}
-						.info-img-div2 {
-							order: 1;
-						}
-						.info-titles-div2 {
-							order: 2;
 						}
 					}
 				}
@@ -190,6 +209,13 @@
 								width: $w_100;
 								height: 300px;
 							}
+						}
+						.info-titles-div {
+							width: $w_100;
+						p {
+							font-size: 1em;
+							line-height: 20px;
+						}
 						}
 					}
 				}
