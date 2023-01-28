@@ -11,7 +11,18 @@
 	background: #fff;
 	width: $w_100;
 	overflow: hidden;
-
+	.nav {
+		&__elements {
+			&-linksDiv {
+				&-ul {
+					&-services {
+						color: $denger;
+						border-bottom: 2px solid $denger;
+					}
+				}
+			}
+		}
+	}
 	.page__title {
 		width: 36%;
 		position: absolute;

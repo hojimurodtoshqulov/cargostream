@@ -29,7 +29,7 @@ const Nav = ({onClick}) => {
 			window.removeEventListener("scroll", listenScrollEvent);
 		};
 	}, []);
-
+   
 	return (
 		<Suspense fallback="loading">
 			<nav
@@ -40,7 +40,7 @@ const Nav = ({onClick}) => {
 					transition: "all 0.8s",
 				}}
 			>
-				<img className="nav__logo" src={navLogo} alt="nav logo" />
+				<Link className="nav__logo" to="/"><img className="nav__logo-img" src={navLogo} alt="nav logo" /></Link>
 				<div className="nav__elements">
 					<div
 						className="nav__elements-linksDiv"

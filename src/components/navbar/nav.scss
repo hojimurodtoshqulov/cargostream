@@ -19,9 +19,13 @@
 	background: #181a1be5;
 	transition: 0.3s;
 	&__logo {
+		display: block;
 		width: 15%;
-		object-fit: cover;
 		cursor: pointer;
+		&-img {
+			width: 100%;
+			object-fit: cover;
+		}
 	}
 	&__elements {
 		width: 82%;
