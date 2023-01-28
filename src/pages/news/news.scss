@@ -42,7 +42,7 @@
 		padding: 8% 0 6% 0;
 		.card {
 			&__elements {
-				padding: 0 0 2% 0;
+				padding: 0 0 3% 0;
 				transition: 0.5s all;
 				margin: 10% 5% 10% 5%;
 				width: 90%;
@@ -79,6 +79,7 @@
 					font-family: $font_texts;
 					line-height: 1.4rem;
 					color: #666;
+					text-align: justify;
 				}
 				span {
 					button {
@@ -185,8 +186,8 @@
 						height: 230px;
 					}
 					p {
-						line-height: 1.4;
-						width: 90%;
+						line-height: 1.2rem;
+						width: 95%;
 					}
 					button {
 						padding: 0% 10%;
@@ -218,8 +219,8 @@
 						width: 95%;
 						text-align: justify;
 						font-size: 0.6rem;
-						line-height: 1.1rem;
-color: aqua;
+						line-height: 1rem;
+						color: aqua;
 					}
 					button {
 						padding: 0% 10%;

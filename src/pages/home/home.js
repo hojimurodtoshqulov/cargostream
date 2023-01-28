@@ -18,6 +18,7 @@ import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import imgCompany from "../../media/Logistics-Companies.jpg"
 const Home = () => {
+
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
 	};
@@ -64,9 +65,6 @@ const Home = () => {
 					<ImageSlider slides={SliderData} />
 				</div>
 				<div className="infoDiv">
-					{/* <button onClick={() => changeLanguage("de")}>de</button>
-				<button onClick={() => changeLanguage("en")}>en</button> */}
-					{/* <h1>{t("title")}</h1> */}
 					<OurCompany OurCompanyData={OurCompanyData}/>
 					<OurServices />
 				</div>

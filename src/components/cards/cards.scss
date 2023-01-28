@@ -17,7 +17,7 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1em;
-		text-align: center;
+		text-align: justify;
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.378);
 		border-radius: $br_r_5;
 		overflow: hidden;
@@ -43,6 +43,7 @@
 			font-family: $font_texts;
 			line-height: 1.5rem;
 			color: #666;
+			text-align: justify;
 		}
 		.link {
 			display: block;
@@ -70,6 +71,7 @@
 
 			p {
 				line-height: 1.5rem;
+				text-align: justify;
 			}
 			button {
 				padding: 0% 8%;

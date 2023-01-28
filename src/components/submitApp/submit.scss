@@ -50,11 +50,11 @@
 			padding: 1% 2%;
 			font-size: 1.5em;
 			border: none;
-			border-bottom: 1px solid $light;
+			border-bottom: 2px solid $light;
 		}
 		input:focus {
 			border: none;
-			border-bottom: 2px solid $light;
+			border-bottom: 2px solid $reddish;
 			outline: none;
 		}
 		.input-tell {
@@ -72,12 +72,12 @@
 			width: $w_100;
 			font-size: 1.5em;
 			border: none;
-			border-bottom: 1px solid $light;
+			border-bottom: 2px solid $light;
 		}
 
 		textarea:focus {
 			border: none;
-			border-bottom: 2px solid $light;
+			border-bottom: 2px solid $reddish;
 			outline: none;
 		}
 
