@@ -125,7 +125,7 @@ const Nav = ({onClick}) => {
 							}}
 						>
 							<label htmlFor="navLinks__menu">
-								<i class="fa-solid fa-bars-staggered"></i>
+								<i className="fa-solid fa-bars-staggered"></i>
 							</label>
 						</p>
 					</div>

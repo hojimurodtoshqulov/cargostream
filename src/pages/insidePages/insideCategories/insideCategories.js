@@ -43,7 +43,7 @@ const InsideCategories = ({ }) => {
 	return (
 		<>
 			{cardsData.map((item, index) => (
-				<Link to={item.link} className="link">
+				<Link to={item.link} className="link" key={index}>
 					<div className="inside__elements-col1-categories" key={index}>
 						<img src={item.img} alt="inside img" />
 						<h4>{item.title}</h4>

@@ -14,16 +14,6 @@ const Submit = () => {
 		product: "",
 		comment: "",
 	});
-	// const { phone, price, product, comment } = data;
-
-	// const onInputChange = (e) => {
-	// 	setData({ ...data, [e.target.name]: e.target.value });
-	// };
-	// const onSubmit = async (e) => {
-	// 	e.preventDefault();
-	// 	await axios.post("https://cargo-stream.herokuapp.com/email/send", data);
-	// 	navigate("/company");
-	// };
 	function handle(e) {
 		const newData = { ...data };
 		newData[e.target.id] = e.target.value;
@@ -42,7 +32,13 @@ const Submit = () => {
 			.then((res) => {
 				console.log(res.data);
 			});
-		navigate("/company");
+		navigate("/");
+		setData({
+			phone: "",
+			price: "",
+			product: "",
+			comment: "",
+		});
 	};
 	const { t } = useTranslation();
 	return (
