@@ -5,7 +5,10 @@ import { useTranslation } from "react-i18next";
 // import { Axios } from "axios";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-const Submit = () => {
+
+const Submit = ({ onClose }) => {
+	// open={openModal} onClose={() => setOpenModal(false)}
+	const [openModal, setOpenModal] = useState(false);
 	const navigate = useNavigate();
 	const url = "https://cargo-stream.herokuapp.com/email/send";
 	const [data, setData] = useState({
@@ -39,6 +42,8 @@ const Submit = () => {
 			product: "",
 			comment: "",
 		});
+		setOpenModal(false);
+		onClose(openModal);
 	};
 	const { t } = useTranslation();
 	return (
