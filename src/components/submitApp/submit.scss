@@ -80,23 +80,43 @@
 			border-bottom: 2px solid $reddish;
 			outline: none;
 		}
-
-		.input-check-div {
-			width: 100%;
-			label {
-				margin-left: 2%;
-				font-size: 1.1em;
-				font-family: $font_titles;
+		span {
+			align-self: flex-start;
+			order: 5;
+			width: 55%;
+			button {
 			}
 		}
 	}
-
-	button {
-		align-self: flex-start;
-		order: 5;
+}
+.openSuccess {
+	transition: all 1s ease-in;
+	position: fixed;
+	top: 37%;
+	right: 4%;
+	z-index: 12345;
+	width: 40%;
+	background: $light;
+	color: $dark;
+	border-radius: 15px 15px 0 15px;
+	padding: 3% 5%;
+	text-align: center;
+	.corner {
+		width: 30px;
+		height: 20px;
+		transform: rotate(20deg);
+		background: #fff;
+		border-radius: 0 100% 0 0;
+		position: absolute;
+		bottom: -5%;
+		right: -1%;
+		z-index: -1;
 	}
 }
-
+.closeSuccess {
+	top: 37%;
+	right: -40%;
+}
 @media (max-width: $xl) {
 	.submit {
 		width: $w_100;
@@ -171,6 +191,12 @@
 			}
 		}
 	}
+	.closeSuccess {
+		.corner {
+			bottom: -5%;
+			right: -1.5%;
+		}
+	}
 }
 
 @media (max-width: $sm) {
@@ -178,7 +204,6 @@
 		h2 {
 			font-size: 1.6em;
 		}
-
 		p {
 			font-size: 1em;
 			width: 100%;
@@ -209,6 +234,12 @@
 		gap: 2em;
 		h2 {
 			font-size: 1.3em;
+		}
+	}
+	.closeSuccess {
+		.corner {
+			bottom: -5%;
+			right: -2%;
 		}
 	}
 }

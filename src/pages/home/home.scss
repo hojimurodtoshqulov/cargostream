@@ -30,15 +30,15 @@
 		background: rgba(0, 0, 0, 0.749);
 		transition: 0.5s;
 	}
-.slider_div {
-	background: $light;
-	width: 100%;
-}
+	.slider_div {
+		background: $light;
+		width: 100%;
+	}
 
-.infoDiv {
-	background: $light;
-	padding: 5% 0 10% 0;
-}
+	.infoDiv {
+		background: $light;
+		padding: 5% 0 10% 0;
+	}
 }
 
 .stages-elements-bg {
@@ -61,6 +61,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+		overflow: hidden;
 		.stages-elements-col1 {
 			width: 48%;
 		}
@@ -72,7 +73,7 @@
 .partners-location {
 	background: $light;
 }
-.home{
+.home {
 	.nav {
 		&__elements {
 			&-linksDiv {
@@ -86,6 +87,7 @@
 		}
 	}
 }
+
 @media (max-width: $xl) {
 	.stages-elements {
 		padding: 10% 0;
