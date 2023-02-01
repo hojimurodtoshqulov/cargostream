@@ -16,9 +16,21 @@ import Carousel from "../../components/carousel/carousel";
 import { carouselData } from "../../components/carousel/carouselData/carouselData";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-import imgCompany from "../../media/Logistics-Companies.jpg"
+import imgCompany from "../../media/Logistics-Companies.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Home = () => {
-
+	// const notify = () =>
+	// 	toast.success("Your comment has been sent successfully!", {
+	// 		position: "top-right",
+	// 		autoClose: 5000,
+	// 		hideProgressBar: false,
+	// 		closeOnClick: true,
+	// 		pauseOnHover: true,
+	// 		draggable: true,
+	// 		progress: undefined,
+	// 		theme: "colored",
+	// 	});
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
 	};
@@ -27,7 +39,7 @@ const Home = () => {
 		{
 			image: imgCompany,
 			title: t("infoCompany"),
-			description:t("infoCompanyDescription"),
+			description: t("infoCompanyDescription"),
 			buttonTitle: t("infoBtn"),
 		},
 	];
@@ -54,6 +66,7 @@ const Home = () => {
 			key: 2,
 		},
 	];
+	const successSubmit = (success) => success;
 	return (
 		<Suspense fallback="loading">
 			<div className="main home">
@@ -65,7 +78,7 @@ const Home = () => {
 					<ImageSlider slides={SliderData} />
 				</div>
 				<div className="infoDiv">
-					<OurCompany OurCompanyData={OurCompanyData}/>
+					<OurCompany OurCompanyData={OurCompanyData} />
 					<OurServices />
 				</div>
 				<div className="stages-elements-bg" id="submit"></div>
@@ -83,7 +96,8 @@ const Home = () => {
 							data-aos="fade-left"
 							data-aos-duration="1000"
 						>
-							<Submit />
+							{/* <Submit /> */}
+							<Submit success={successSubmit} />
 						</div>
 					</div>
 				</div>
@@ -91,7 +105,22 @@ const Home = () => {
 					<Carousel carouselData={carouselData} />
 					<Location />
 				</div>
+
 				<Footer />
+			</div>
+			<div className="success">
+				<ToastContainer
+					position="top-right"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="colored"
+				/>
 			</div>
 		</Suspense>
 	);

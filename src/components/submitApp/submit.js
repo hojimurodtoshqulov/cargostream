@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Submit = ({ onClose }) => {
-	const notify = () =>
+const Submit = ({ onClose, success }) => {
+	 success = () =>
 		toast.success("Your comment has been sent successfully!", {
 			position: "top-right",
 			autoClose: 5000,
@@ -20,7 +20,7 @@ const Submit = ({ onClose }) => {
 			theme: "colored",
 		});
 	const [openModal, setOpenModal] = useState(false);
-	const [openSuccess, setOpenSuccess] = useState(false);
+	// const [openSuccess, setOpenSuccess] = useState(false);
 	const navigate = useNavigate();
 	const url = "https://cargo-stream.herokuapp.com/email/send";
 	const [data, setData] = useState({
@@ -55,8 +55,8 @@ const Submit = ({ onClose }) => {
 			comment: "",
 		});
 		setOpenModal(false);
-		// onClose(openModal);
-		setOpenSuccess(true);
+		onClose(openModal);
+		// setOpenSuccess(true);
 		// notify(true);
 		// <ToastContainer />;
 	};
@@ -107,7 +107,7 @@ const Submit = ({ onClose }) => {
 					<span
 						onClick={
 							data.phone && data.price && data.product && data.comment !== ""
-								? notify
+								? success
 								: null
 						}
 					>
@@ -115,7 +115,7 @@ const Submit = ({ onClose }) => {
 					</span>
 				</form>
 			</div>
-			<ToastContainer
+			{/* <ToastContainer
 				position="top-right"
 				autoClose={5000}
 				hideProgressBar={false}
@@ -126,7 +126,7 @@ const Submit = ({ onClose }) => {
 				draggable
 				pauseOnHover
 				theme="colored"
-			/>
+			/> */}
 		</>
 	);
 };

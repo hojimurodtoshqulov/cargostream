@@ -87,7 +87,10 @@
 		}
 	}
 }
-
+.success{
+position: relative;
+z-index: 99999;
+}
 @media (max-width: $xl) {
 	.stages-elements {
 		padding: 10% 0;
