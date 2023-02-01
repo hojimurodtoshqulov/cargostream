@@ -55,10 +55,10 @@ const Submit = ({ onClose }) => {
 			comment: "",
 		});
 		setOpenModal(false);
-		onClose(openModal);
+		// onClose(openModal);
 		setOpenSuccess(true);
-		notify(true);
-		<ToastContainer />;
+		// notify(true);
+		// <ToastContainer />;
 	};
 	const { t } = useTranslation();
 	return (
