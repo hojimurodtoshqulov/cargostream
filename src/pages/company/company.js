@@ -47,7 +47,6 @@ const Company = () => {
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} title={"Our company"} />
 				<h2 className="page__title">{t("company")}</h2>
-				<button onClick={getData}>btn</button>
 				<div className="infoDiv">
 					<OurCompany OurCompanyData={OurCompanyData2} />
 				</div>
