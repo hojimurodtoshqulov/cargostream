@@ -1,9 +1,9 @@
 import React from "react";
 import Submit from "../submitApp/submit";
 import "./modal.scss";
-// import {useState} from "react";
+import {useState} from "react";
 const Modal = ({ open, onClose}) => {
-// const [openModal, setOpenModal] = useState(true)
+const [openModal, setOpenModal] = useState(true)
 	if (!open) return null;
 	return (
 		<div className="overlay">

@@ -16,18 +16,18 @@ a:hover {
 	color: $denger;
 	background-color: rgba(255, 255, 255, 0.147);
 	border: 1px solid rgb(255, 255, 255);
-	width: 6px;
+	width: 8px;
 	height: 0px;
+	cursor: pointer;
 }
 ::-webkit-scrollbar-thumb {
 	color: $light;
 	background-color: $reddish;
-	border-radius: 15px;
+	border-radius: 50%;
+	cursor: pointer;
 }
 ::-webkit-scrollbar-button {
-	background-color: $reddish;
-	color: $reddish;
-	border: 1px solid $dark;
+	display: none;
 }
 body {
 	overflow-x: hidden;

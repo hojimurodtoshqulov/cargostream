@@ -14,6 +14,8 @@ import "./contact.scss";
 import Location from "../../components/location/location";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
 	const { t } = useTranslation();
 	const handleClick = (e) => {
@@ -53,6 +55,8 @@ const StagesDataCont = [
 	useEffect(() => {
 		Aos.init({ duration: 2000 });
 	}, []);
+	const successSubmit = (success) => success;
+
 	return (
 		<Suspense fallback="loading">
 			<div className="contact main">
@@ -81,13 +85,25 @@ const StagesDataCont = [
 							data-aos="fade-left"
 							data-aos-duration="1000"
 						>
-							<Submit />
+							<Submit success={successSubmit}/>
 						</div>
 					</div>
 				</div>
 				<Location />
 				<Footer />
 			</div>
+				<ToastContainer
+					position="top-right"
+					autoClose={5000}
+					hideProgressBar={false}
+					newestOnTop={false}
+					closeOnClick
+					rtl={false}
+					pauseOnFocusLoss
+					draggable
+					pauseOnHover
+					theme="light"
+				/>
 		</Suspense>
 	);
 };

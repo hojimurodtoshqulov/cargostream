@@ -3,13 +3,12 @@ import Button from "../button/button";
 import "./submit.scss";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 const Submit = ({ onClose, success }) => {
-	 success = () =>
-		toast.success("Your comment has been sent successfully!", {
+	const { t } = useTranslation();
+	success = () =>
+		toast.success(t("submitSuccess"), {
 			position: "top-right",
 			autoClose: 5000,
 			hideProgressBar: false,
@@ -17,11 +16,9 @@ const Submit = ({ onClose, success }) => {
 			pauseOnHover: true,
 			draggable: true,
 			progress: undefined,
-			theme: "colored",
+			theme: "light",
 		});
 	const [openModal, setOpenModal] = useState(false);
-	// const [openSuccess, setOpenSuccess] = useState(false);
-	const navigate = useNavigate();
 	const url = "https://cargo-stream.herokuapp.com/email/send";
 	const [data, setData] = useState({
 		phone: "",
@@ -47,7 +44,6 @@ const Submit = ({ onClose, success }) => {
 			.then((res) => {
 				console.log(res.data);
 			});
-		navigate("/");
 		setData({
 			phone: "",
 			price: "",
@@ -56,11 +52,7 @@ const Submit = ({ onClose, success }) => {
 		});
 		setOpenModal(false);
 		onClose(openModal);
-		// setOpenSuccess(true);
-		// notify(true);
-		// <ToastContainer />;
 	};
-	const { t } = useTranslation();
 	return (
 		<>
 			<div className="submit">
@@ -106,7 +98,8 @@ const Submit = ({ onClose, success }) => {
 					></textarea>
 					<span
 						onClick={
-							data.phone && data.price && data.product && data.comment !== ""
+							(data.phone && data.price && data.product) ||
+							(data.phone && data.price && data.product && data.comment) !== ""
 								? success
 								: null
 						}
@@ -115,18 +108,6 @@ const Submit = ({ onClose, success }) => {
 					</span>
 				</form>
 			</div>
-			{/* <ToastContainer
-				position="top-right"
-				autoClose={5000}
-				hideProgressBar={false}
-				newestOnTop={false}
-				closeOnClick
-				rtl={false}
-				pauseOnFocusLoss
-				draggable
-				pauseOnHover
-				theme="colored"
-			/> */}
 		</>
 	);
 };

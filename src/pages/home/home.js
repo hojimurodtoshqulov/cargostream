@@ -17,20 +17,9 @@ import { carouselData } from "../../components/carousel/carouselData/carouselDat
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import imgCompany from "../../media/Logistics-Companies.jpg";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Home = () => {
-	// const notify = () =>
-	// 	toast.success("Your comment has been sent successfully!", {
-	// 		position: "top-right",
-	// 		autoClose: 5000,
-	// 		hideProgressBar: false,
-	// 		closeOnClick: true,
-	// 		pauseOnHover: true,
-	// 		draggable: true,
-	// 		progress: undefined,
-	// 		theme: "colored",
-	// 	});
 	const handleClick = (e) => {
 		i18next.changeLanguage(e.target.value);
 	};
@@ -97,7 +86,7 @@ const Home = () => {
 							data-aos-duration="1000"
 						>
 							{/* <Submit /> */}
-							<Submit success={successSubmit} />
+							<Submit  success={successSubmit} />
 						</div>
 					</div>
 				</div>
@@ -119,7 +108,7 @@ const Home = () => {
 					pauseOnFocusLoss
 					draggable
 					pauseOnHover
-					theme="colored"
+					theme="light"
 				/>
 			</div>
 		</Suspense>
