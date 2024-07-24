@@ -10,12 +10,12 @@ const MailLang = ({ onClick }) => {
 	return (
 		<Suspense fallback="loading">
 			<div onClick={(e) => handleClick(e)} className="nav__otherElements">
-				<a
+				{/* <a
 					className="nav__otherElements-mail"
 					href="mail:cargostreamuz@gmail.com"
 				>
 					<i className="fa-solid fa-envelope"></i> cargostreamuz@gmail.com
-				</a>
+				</a> */}
 				<div
 					onClick={(e) => handleClick(e)}
 					className="nav__otherElements__language"

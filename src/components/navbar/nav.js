@@ -72,7 +72,7 @@ const Nav = ({onClick}) => {
 						</ul>
 					</div>
 					<div className="nav__elements-others">
-						<a
+						{/* <a
 							className="nav__elements-others-mail"
 							href="mail:cargostreamuz@gmail.com"
 							style={{
@@ -80,7 +80,7 @@ const Nav = ({onClick}) => {
 							}}
 						>
 							<i className="fa-solid fa-envelope"></i> cargostreamuz@gmail.com
-						</a>
+						</a> */}
 						<div className="nav__elements-others-language">
 							<button
 								className="nav__elements-others-language-img eng"
@@ -109,7 +109,7 @@ const Nav = ({onClick}) => {
 								<i className="fa-solid fa-phone"></i>
 							</a>
 						</p>
-						<p>
+						{/* <p>
 							<a
 								href="mail:cargostreamuz@gmail.com"
 								style={{
@@ -118,7 +118,7 @@ const Nav = ({onClick}) => {
 							>
 								<i className="fa-solid fa-envelope"></i>
 							</a>
-						</p>
+						</p> */}
 						<p
 							style={{
 								color: navColor,

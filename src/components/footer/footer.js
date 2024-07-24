@@ -11,7 +11,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<img className="footer__logo" src={footerLogo} alt="logo img" />
-			<CallLink />
+			{/* <CallLink /> */}
 				<ul className="nav__links-mobileElements-media">
 					<li>
 						<a href="">
@@ -29,7 +29,7 @@ const Footer = () => {
 						</a>
 					</li>
 				</ul>
-			<MailLang onClick={(e) => handleClick(e)} />
+			{/* <MailLang onClick={(e) => handleClick(e)} /> */}
 		</footer>
 	);
 };

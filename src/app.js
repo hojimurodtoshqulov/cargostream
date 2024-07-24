@@ -10,6 +10,7 @@ import { InsideShip } from "./pages/insidePages/insideShip";
 import { Routes, Route } from "react-router-dom";
 import Aos from "aos";
 import { useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 	useEffect(() => {

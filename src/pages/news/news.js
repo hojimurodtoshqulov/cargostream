@@ -17,6 +17,7 @@ import serviceCardImg3 from "../../media/shipping-rates-are-finally-falling-1428
 import serviceCardImg4 from "../../media/news12.jpg";
 import serviceCardImg5 from "../../media/transportnaya-logistika.jpg";
 import serviceCardImg6 from "../../media/pat-whelen-IcHxE93NoB8-unsplash.jpg";
+
 const News = () => {
 	const { t } = useTranslation();
 	const handleClick = (e) => {
@@ -109,7 +110,7 @@ const News = () => {
 				<label htmlFor="navLinks__menu" className="navLinks__menu"></label>
 				<ShowBg bgImage={bgImg} title={"News"} />
 				<h2 className="page__title">{t("news")}</h2>
-				<div
+				{/* <div
 					className="carousel wrapper"
 					data-aos="zoom-in-up"
 					data-aos-duration="1000"
@@ -125,8 +126,8 @@ const News = () => {
 							</div>
 						))}
 					</Slider>
-				</div>
-				<Footer />
+				</div> */}
+				{/* <Footer /> */}
 			</div>
 		</Suspense>
 	);
