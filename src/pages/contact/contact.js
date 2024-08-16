@@ -26,7 +26,7 @@ const StagesDataCont = [
 		aos: "fade-left",
 		icon: <i class="fa-solid fa-location-dot"></i>,
 		titleCont: t("contactAddress"),
-		descriptionCont: t("contactAddressDescription"),
+		// descriptionCont: t("contactAddressDescription"),
 		key: 0,
 	},
 	{
