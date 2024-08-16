@@ -99,7 +99,7 @@ const Nav = ({onClick}) => {
 				</div>
 				<div className="nav__mobile">
 					<div className="nav__mobile-elements">
-						<p>
+						{/* <p>
 							<a
 								href="tel:+998 93 543 38 11"
 								style={{
@@ -108,7 +108,7 @@ const Nav = ({onClick}) => {
 							>
 								<i className="fa-solid fa-phone"></i>
 							</a>
-						</p>
+						</p> */}
 						{/* <p>
 							<a
 								href="mail:cargostreamuz@gmail.com"
