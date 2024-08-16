@@ -47,7 +47,7 @@ export default function NavbarLinks({params}) {
 				</li>
 			</ul>
 			<div className="nav__links-mobileElements">
-				<CallLink />
+				{/* <CallLink /> */}
 				<ul className="nav__links-mobileElements-media">
 					<li>
 						<a href="">
